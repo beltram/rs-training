@@ -1,0 +1,7 @@
+@font-face {
+    font-family: 'Tungsten';
+    src: url('Tungsten-Medium.woff') format('woff'),
+    url('Tungsten-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}

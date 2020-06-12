@@ -1,0 +1,176 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Rust</title>
+
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sopra-banking.css">
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+
+    <!-- Printing and PDF exports -->
+    <script>
+        var link = document.createElement('link');
+        link.rel = 'stylesheet';
+        link.type = 'text/css';
+        link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+        document.getElementsByTagName('head')[0].appendChild(link);
+
+    </script>
+</head>
+<body>
+<div class="reveal">
+    <div class="header">
+        <span class="logo">Sopra banking software</span>
+        <span class="title">Rust</span>
+        <span class="author">Beltram Maldant</span>
+    </div>
+    <div class="slides">
+        <section data-markdown># Rust 101</section>
+        <section>
+            <section data-markdown># Intro</section>
+            <section data-markdown="slides/intro/foreword.md"></section>
+            <section data-markdown="slides/intro/inception.md"></section>
+            <section data-markdown="slides/intro/naming.md"></section>
+            <section data-markdown="slides/intro/logo.md"></section>
+            <section data-markdown="slides/intro/they-love-it.md"></section>
+            <section data-markdown="slides/intro/they-star-it.md"></section>
+            <section data-markdown="slides/intro/they-use-it.md"></section>
+        </section>
+        <section>
+            <section data-markdown># Basics</section>
+            <section data-markdown="slides/basics/hello.md"></section>
+            <section data-markdown="slides/basics/terminology.md"></section>
+            <section data-markdown="slides/basics/glance-1.md"></section>
+            <section data-markdown="slides/basics/glance-2.md"></section>
+            <section data-markdown="slides/basics/glance-3.md"></section>
+            <section data-markdown="slides/basics/glance-4.md"></section>
+            <section data-markdown="slides/basics/glance-5.md"></section>
+            <section data-markdown="slides/basics/glance-6.md"></section>
+            <section data-markdown="slides/basics/primitives-1.md"></section>
+            <section data-markdown="slides/basics/primitives-2.md"></section>
+            <section data-markdown="slides/basics/flow.md"></section>
+            <section data-markdown="slides/basics/string.md"></section>
+            <section data-markdown="slides/basics/imports.md"></section>
+            <section data-markdown="slides/basics/data-structure-1.md"></section>
+            <section data-markdown="slides/basics/data-structure-2.md"></section>
+        </section>
+        <section>
+            <section data-markdown># Borrowing</section>
+            <section data-markdown="slides/borrowing/overview.md"></section>
+            <section data-markdown="slides/borrowing/heap-stack.md"></section>
+            <section data-markdown="slides/borrowing/java-shallow-copy.md"></section>
+            <section data-markdown="slides/borrowing/java-deep-copy.md"></section>
+            <section data-markdown="slides/borrowing/move.md"></section>
+            <section data-markdown="slides/borrowing/reference.md"></section>
+            <section data-markdown="slides/borrowing/lifetime.md"></section>
+        </section>
+        <section>
+            <section data-markdown># Performance</section>
+            <section data-markdown="slides/performance/bench-1.md"></section>
+            <section data-markdown="slides/performance/bench-2.md"></section>
+            <section data-markdown="slides/performance/bench-3.md"></section>
+            <section data-markdown="slides/performance/but.md"></section>
+        </section>
+        <section>
+            <section data-markdown># Features</section>
+            <section data-markdown="slides/features/reliable.md"></section>
+            <section data-markdown="slides/features/buf-overflow.md"></section>
+            <section data-markdown="slides/features/linux-cve.md"></section>
+            <section data-markdown="slides/features/typed.md"></section>
+            <section data-markdown="slides/features/generics.md"></section>
+            <section data-markdown="slides/features/composition-java-1.md"></section>
+            <section data-markdown="slides/features/composition-java-2.md"></section>
+            <section data-markdown="slides/features/composition-rust.md"></section>
+            <section data-markdown="slides/features/mutability.md"></section>
+            <section data-markdown="slides/features/null-safe.md"></section>
+            <section data-markdown="slides/features/thread-safe.md"></section>
+            <section data-markdown="slides/features/modular.md"></section>
+            <section data-markdown="slides/features/error.md"></section>
+            <section data-markdown="slides/features/shadowing.md"></section>
+            <section data-markdown="slides/features/tuples.md"></section>
+            <section data-markdown="slides/features/std-traits.md"></section>
+        </section>
+        <section>
+            <section data-markdown># Environment</section>
+            <section data-markdown="slides/environment/releases.md"></section>
+            <section data-markdown="slides/environment/cargo-1.md"></section>
+            <section data-markdown="slides/environment/cargo-2.md"></section>
+            <section data-markdown="slides/environment/project-structure.md"></section>
+            <section data-markdown="slides/environment/ide.md"></section>
+            <section data-markdown="slides/environment/batteries-included.md"></section>
+            <section data-markdown="slides/environment/documentation.md"></section>
+            <section data-markdown="slides/environment/opinionated.md"></section>
+            <section data-markdown="slides/environment/profiling.md"></section>
+        </section>
+        <section>
+            <section data-markdown># Gems</section>
+            <section data-markdown="slides/gems/wasm.md"></section>
+            <section data-markdown="slides/gems/clap.md"></section>
+            <section data-markdown="slides/gems/structopt.md"></section>
+            <section data-markdown="slides/gems/serde.md"></section>
+            <section data-markdown="slides/gems/nom.md"></section>
+            <section data-markdown="slides/gems/actix.md"></section>
+            <section data-markdown="slides/gems/bench.md"></section>
+            <section data-markdown="slides/gems/doc.md"></section>
+        </section>
+        <section>
+            <section data-markdown># Advanced</section>
+            <section data-markdown="slides/advanced/orphan-rule.md"></section>
+            <section data-markdown="slides/advanced/smart-pointers.md"></section>
+            <section data-markdown="slides/advanced/phantom-data.md"></section>
+            <section data-markdown="slides/advanced/macro.md"></section>
+            <section data-markdown="slides/advanced/nll.md"></section>
+        </section>
+        <section>
+            <section data-markdown># Competition</section>
+            <section data-markdown="slides/competition/not-yet-awesome.md"></section>
+            <section data-markdown="slides/competition/c.md"></section>
+            <section data-markdown="slides/competition/go-jdd-dependency-mgmt.html"></section>
+            <section data-markdown="slides/competition/go-jdd-err.html"></section>
+            <section data-markdown="slides/competition/go-concurrency-bugs.md"></section>
+            <section data-markdown="slides/competition/good-bad-ugly.md"></section>
+            <section data-markdown="slides/competition/go-for-casuals.md"></section>
+        </section>
+        <section>
+            <section data-markdown># Outro</section>
+            <section data-markdown="slides/outro/glance.md"></section>
+            <section data-markdown="slides/outro/getting-started.md"></section>
+            <section data-markdown="slides/outro/questions.md"></section>
+        </section>
+    </div>
+
+</div>
+
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script src="js/external-html.js"></script>
+<script>
+    Reveal.initialize({
+        width: 1200,
+        history: true,
+        dependencies: [
+            {src: 'plugin/twitter/embed-tweet.js'},
+            {src: 'plugin/markdown/marked.js'},
+            {src: 'plugin/markdown/markdown.js'},
+            {src: 'plugin/notes/notes.js', async: true},
+            {
+                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                    hljs.initHighlightingOnLoad();
+                }
+            }
+        ]
+    });
+
+    Reveal.configure({
+        slideNumber: true
+    });
+
+</script>
+</body>
+</html>
