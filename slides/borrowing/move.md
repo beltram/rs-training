@@ -1,6 +1,14 @@
 ## Borrowing 
 ###### Introducing move
-<img src="lib/images/move.svg" style="height: 13vh"/>
+
+```rust
+fn do_stuff() {
+    let s1: String = String::from("hello");
+    let s2: String = s1;
+    println!("{:?} world", s1);
+}
+```
+
 ```console
 let s1: String = String::from("hello");
     -- move occurs because `s1` has type `std::string::String`, 
@@ -12,11 +20,3 @@ println!("{:?} world", s1);
 ```  
 [📒](https://doc.rust-lang.org/1.7.0/book/ownership.html) | 
 [💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=3f5767b8b83635d49723d1be198c8eb6)
-
-<!--
-fn do_stuff() {
-    let s1: String = String::from("hello");
-    let s2: String = s1;
-    println!("{:?} world", s1);
-}
--->

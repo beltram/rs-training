@@ -1,9 +1,6 @@
 ## Structopt
-<img src="lib/images/structopt.svg" style="height:40vh"/>  
-[📒](https://docs.rs/structopt/0.3.3/structopt/) | 
-[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=684eee38a092b67a255bbe2f2d8ebdbd)
 
-<!--
+```rust
 #[derive(StructOpt, Debug)]
 #[structopt(name = "guilt")]
 struct Guilt {
@@ -23,6 +20,8 @@ pub enum Commands {
         who: String,
     },
 }
-        
 println!("{:?}", Guilt::from_args());
--->
+```
+
+[📒](https://docs.rs/structopt/0.3.3/structopt/) | 
+[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=684eee38a092b67a255bbe2f2d8ebdbd)

@@ -1,9 +1,6 @@
 ## Actix
-<img src="lib/images/actix.svg" style="height:40vh"/>  
-[📒](https://actix.rs/) | 
-[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e9f0f4bbb63e3a2da69daa14051322e9)
 
-<!--
+```rust
 use actix_web::{middleware, web, App, HttpRequest, HttpServer};
 
 fn index(req: HttpRequest) -> &'static str {
@@ -25,4 +22,7 @@ fn main() -> std::io::Result<()> {
     .bind("127.0.0.1:8080")?
     .run()
 }
--->
+```
+
+[📒](https://actix.rs/) | 
+[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=e9f0f4bbb63e3a2da69daa14051322e9)

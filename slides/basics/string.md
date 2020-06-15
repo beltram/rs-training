@@ -1,9 +1,6 @@
 ## String
-<img src="lib/images/string.svg" style="height: 40vh"/>  
-[📒](https://doc.rust-lang.org/1.7.0/book/strings.html) | 
-[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=759eebce54df6844d10fc147b7f76df1)
 
-<!--
+```rust
 let empty_string: String = String::new();
 let also_empty_string: String = String::default();
 let string_litteral: &str = "I am allocated on the stack";
@@ -17,5 +14,9 @@ let i_will_be_moved: String = String::from("E=");
 let formula: String = i_will_be_moved + "MC2";
 let formula: String = format!("{}={}", "E", "MC2");
 let hello: &str = &"hello world!"[..5];
+// Fails ↓
 let nihao: &str = &"你好"[..1];
--->
+```
+
+[📒](https://doc.rust-lang.org/1.7.0/book/strings.html) | 
+[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=759eebce54df6844d10fc147b7f76df1)

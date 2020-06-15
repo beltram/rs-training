@@ -1,9 +1,6 @@
 ## Modularity the good way 
-<img src="lib/images/modularity.svg" style="height:40vh"/>    
-[📒](https://doc.rust-lang.org/1.7.0/book/crates-and-modules.html) | 
-[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=6fb61734f410fc569cc4ccd0c5392690) 
 
-<!--
+```rust
 mod app {
     mod api {
         use super::client;
@@ -30,4 +27,7 @@ mod app {
         //api::list();
     }
 }
--->
+```
+
+[📒](https://doc.rust-lang.org/1.7.0/book/crates-and-modules.html) | 
+[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=6fb61734f410fc569cc4ccd0c5392690)

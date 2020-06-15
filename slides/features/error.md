@@ -1,9 +1,6 @@
 ## Error handling
-<img src="lib/images/error.svg" style="height:40vh"/>  
-[📒](https://doc.rust-lang.org/1.7.0/book/error-handling.html) | 
-[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=85c7918c6509ee758c88364ef94d134d)
 
-<!--
+```rust
 use std::io::{Error, ErrorKind, Result};
 use std::path::PathBuf;
     
@@ -26,4 +23,7 @@ fn read_file(path: PathBuf) -> Result<String> {
         Err(Error::new(ErrorKind::NotFound, "I only read absolute files"))
     }
 }
--->
+```
+
+[📒](https://doc.rust-lang.org/1.7.0/book/error-handling.html) | 
+[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=85c7918c6509ee758c88364ef94d134d)

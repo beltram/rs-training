@@ -1,10 +1,7 @@
 ## Profiling 
-<img src="lib/images/profiling.svg" style="height: 40vh"/>  
-[📒](https://doc.rust-lang.org/1.7.0/book/conditional-compilation.html) | 
-[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=aa839d2950d03c48ccbdb5e4205c0f73)
 
-<!--
-//Cargo.toml
+```toml
+# Cargo.toml
 [features]
 ci = []
 [target.'cfg(target_os = "macos")'.dependencies]
@@ -32,4 +29,7 @@ pub fn symlink() {
 pub fn symlink() {
     std::os::windows::fs::symlink_file(from, to).unwrap();
 }
--->
+```
+
+[📒](https://doc.rust-lang.org/1.7.0/book/conditional-compilation.html) | 
+[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=aa839d2950d03c48ccbdb5e4205c0f73)

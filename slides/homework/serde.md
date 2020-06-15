@@ -1,9 +1,6 @@
 ## Serde
-<img src="lib/images/serde.svg" style="height:40vh"/>  
-[📒](https://serde.rs/) | 
-[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=3633cb4437d21831d680af853b3cfd3e)
 
-<!--
+```rust
 use serde::*;
 #[derive(new, Clone, Debug, Default, Serialize, Deserialize)]
 #[serde(default)]
@@ -21,4 +18,7 @@ fn test() {
     println!("From yaml: {:#?}", from_yaml);
     println!("From json: {:#?}", from_json);
 }
--->
+```
+
+[📒](https://serde.rs/) | 
+[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=3633cb4437d21831d680af853b3cfd3e)
