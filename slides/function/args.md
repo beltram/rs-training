@@ -4,7 +4,7 @@
 * no vararg
 
 ```rust
-fn no_arg() { } // parenthesis required
+fn no_arg() { } // () required
 fn one_arg(name: &str) { }
 fn two_arg(name: &str, age: u8) { }
 // passing mutable arg
