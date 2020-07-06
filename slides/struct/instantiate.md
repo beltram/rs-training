@@ -10,7 +10,8 @@ fn main() {
     let name = "beltram".to_string();
     // you can init a 'name' field by a 'name' local variable
     let instance = Person { name, age: 29, };
-    // create a new instance from an other
+    let name = instance.name; // access fields with dot notation
+    // create a new instance from an other. Called 'update syntax'
     let copy_from_other_instance = Person { age: 30, ..instance };
 }
 ```
