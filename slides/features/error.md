@@ -25,5 +25,5 @@ fn read_file(path: PathBuf) -> Result<String> {
 }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/error-handling.html) | 
+[📒](https://doc.rust-lang.org/1.17.0/book/error-handling.html) | 
 [💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=85c7918c6509ee758c88364ef94d134d)

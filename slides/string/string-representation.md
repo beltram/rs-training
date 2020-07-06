@@ -21,4 +21,4 @@ let a_string: String = String::from("Pascal");
                          [––––––– length ––––––––]
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/strings.html)
+[📒](https://doc.rust-lang.org/1.17.0/book/strings.html)

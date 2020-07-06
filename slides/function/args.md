@@ -13,4 +13,4 @@ fn one_mut_arg(mut person: Person) { person.name = "other".to_string(); }
 fn one_mut_borrow_arg(person: &mut Person) { person.name = "other".to_string(); }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/functions.html)
+[📒](https://doc.rust-lang.org/1.17.0/book/functions.html)

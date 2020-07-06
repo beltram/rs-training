@@ -10,4 +10,4 @@ fn return_much() -> (u8, u8, u8, u8, u8) {
 }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/functions.html)
+[📒](https://doc.rust-lang.org/1.17.0/book/functions.html)

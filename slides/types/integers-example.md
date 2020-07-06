@@ -9,4 +9,4 @@ let u64_on_64_proc: usize = 0;
 let a: u8 = 255 + 1;
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/primitive-types.html#numeric-types)
+[📒](https://doc.rust-lang.org/1.17.0/book/primitive-types.html#numeric-types)

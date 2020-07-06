@@ -8,4 +8,4 @@ let a = if true { 1 }; // ERROR
 let a = if true { "true" } else { 0 }; // ERROR 
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/if.html)
+[📒](https://doc.rust-lang.org/1.17.0/book/if.html)

@@ -16,4 +16,4 @@ fn main() {
 }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/functions.html#function-pointers)
+[📒](https://doc.rust-lang.org/1.17.0/book/functions.html#function-pointers)

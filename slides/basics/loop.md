@@ -16,5 +16,5 @@ for g in ["A", "B", "C"].iter() {
 }
 ["A", "B", "C"].iter().for_each(|g| println!("I got an {} at my exam !", g));
 ```
-[📒](https://doc.rust-lang.org/1.7.0/book/loops.html) | 
+[📒](https://doc.rust-lang.org/1.17.0/book/loops.html) | 
 [💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=bccf5886d84e73992078612136f71303)

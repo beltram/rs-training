@@ -11,4 +11,4 @@ let float: f64 = 1.0;
 let default_f64 = 1.0;
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/primitive-types.html#numeric-types)
+[📒](https://doc.rust-lang.org/1.17.0/book/primitive-types.html#numeric-types)

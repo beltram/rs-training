@@ -17,4 +17,4 @@ mut_array[0] = "z";
 // shorthand for initializing an array and filling it
 let array_containing_1_ten_times = [1; 10];
 ```
-[📒](https://doc.rust-lang.org/1.7.0/book/primitive-types.html#arrays)
+[📒](https://doc.rust-lang.org/1.17.0/book/primitive-types.html#arrays)

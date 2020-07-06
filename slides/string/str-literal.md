@@ -10,4 +10,4 @@ let a_string_literal: &str = "Pascal"
 let a_string_literal: &'static str = "Pascal" // 'static lifetime is implicit
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/strings.html)
+[📒](https://doc.rust-lang.org/1.17.0/book/strings.html)

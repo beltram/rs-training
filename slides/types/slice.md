@@ -14,4 +14,4 @@ let slice_b_c = &array[1..3];
 let slice_b_d = &array[1..=3];
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/primitive-types.html#slices)
+[📒](https://doc.rust-lang.org/1.17.0/book/primitive-types.html#slices)

@@ -18,5 +18,5 @@ fn use_return(to: String) -> String {
 }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/references-and-borrowing.html) | 
+[📒](https://doc.rust-lang.org/1.17.0/book/references-and-borrowing.html) | 
 [💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=ea35bb5d7a990008c6badcb8a9cf719b)

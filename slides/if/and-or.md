@@ -13,4 +13,4 @@ if a == 1 && b == 3 { println!("odd") }
 if (a == 1) ^ (b == 3) { println!("either 1 or 3") }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/if.html)
+[📒](https://doc.rust-lang.org/1.17.0/book/if.html)

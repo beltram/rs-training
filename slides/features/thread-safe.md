@@ -19,5 +19,5 @@ fn send_chunks() {
 }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/concurrency.html) | 
+[📒](https://doc.rust-lang.org/1.17.0/book/concurrency.html) | 
 [💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=46cba10e3dde1ca0e8f8d54d653eaa16)

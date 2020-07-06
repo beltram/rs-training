@@ -31,5 +31,5 @@ pub fn symlink() {
 }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/conditional-compilation.html) | 
+[📒](https://doc.rust-lang.org/1.17.0/book/conditional-compilation.html) | 
 [💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=aa839d2950d03c48ccbdb5e4205c0f73)

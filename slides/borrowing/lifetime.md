@@ -13,5 +13,5 @@ fn say_hi_and_get_initial<'a>(firstname: &str, lastname: &'a str) -> &'a str {
 }
 ```
   
-[📒](https://doc.rust-lang.org/1.7.0/book/lifetimes.html) | 
+[📒](https://doc.rust-lang.org/1.17.0/book/lifetimes.html) | 
 [💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=075f8d7e47ab6e93732d4bf81ab81c46)

@@ -7,4 +7,4 @@ void doStuff() {
 }
 ```
 <img src="https://doc.rust-lang.org/book/img/trpl04-02.svg" style="height: 20vh"/>  
-[📒](https://doc.rust-lang.org/1.7.0/book/the-stack-and-the-heap.html) 
+[📒](https://doc.rust-lang.org/1.17.0/book/the-stack-and-the-heap.html) 

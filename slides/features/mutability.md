@@ -11,5 +11,5 @@ fn prepare_elections() -> Politician {
 }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/mutability.html) | 
+[📒](https://doc.rust-lang.org/1.17.0/book/mutability.html) | 
 [💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=3ef3adb0095e04b18cccdac468cad40b)

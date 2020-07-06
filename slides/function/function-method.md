@@ -10,4 +10,4 @@ impl Obj {
 }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/functions.html)
+[📒](https://doc.rust-lang.org/1.17.0/book/functions.html)

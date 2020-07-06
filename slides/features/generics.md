@@ -16,5 +16,5 @@ struct Cyril {}
 impl Human<Lemon> for Cyril {}
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/generics.html) | 
+[📒](https://doc.rust-lang.org/1.17.0/book/generics.html) | 
 [💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d2f16e78a80b4547d1551e5e3cce834e)

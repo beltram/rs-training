@@ -9,4 +9,4 @@
 | 128-bit |  i128  |   u128   |
 |   arch  |  isize |   usize  |
 
-[📒](https://doc.rust-lang.org/1.7.0/book/primitive-types.html#numeric-types)
+[📒](https://doc.rust-lang.org/1.17.0/book/primitive-types.html#numeric-types)

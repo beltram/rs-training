@@ -18,5 +18,5 @@ let hello: &str = &"hello world!"[..5];
 let nihao: &str = &"你好"[..1];
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/strings.html) | 
+[📒](https://doc.rust-lang.org/1.17.0/book/strings.html) | 
 [💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=759eebce54df6844d10fc147b7f76df1)

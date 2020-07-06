@@ -15,4 +15,4 @@ if a == 0 {
 if (a == 0) { println!("0"); }
 ```
 
-[📒](https://doc.rust-lang.org/1.7.0/book/if.html)
+[📒](https://doc.rust-lang.org/1.17.0/book/if.html)
