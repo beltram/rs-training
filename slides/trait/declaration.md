@@ -1,11 +1,13 @@
 ## trait
 
+* using 'trait' keyword
+
 ```rust
 trait Interface {
-    fn hash(&self) -> u8;
-    fn destroy(self);
-    fn change_id(&mut self);
-    fn as_str() -> String;
+    fn hash(&self) -> u8; // borrowed implementer
+    fn destroy(self); // owned implementer
+    fn change_id(&mut self); // borrowed implementer
+    fn as_str() -> String; // static method
 }
 ```
 
