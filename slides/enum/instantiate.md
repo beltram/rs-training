@@ -1,16 +1,16 @@
 ## instantiate
 
 * Value are namespaced with enum identifier (use of double colon) 
-* different enum can contains same variant names
-```rust
-fn main() {
-    // Both values are of Workplace type
-    let paris = Workplace::Paris; 
-    let nantes = Workplace::Nantes;
+* different enums can contain same variant names
 
-    // data is attached to enum variant directly
-    let kleber = WorkplaceDetailed::Paris(String::from("Kleber")); 
-}
+```rust
+// Both values are of Workplace type
+let annecy = City::Annecy; 
+let nantes = City::Nantes;
+
+// data is attached to enum variant directly
+let kleber = City::Paris(16);
+let el_paso = City::Juarez(String::from("USA"));
 ```
 
 [📒](https://doc.rust-lang.org/1.17.0/book/enums.html)

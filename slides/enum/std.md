@@ -1,6 +1,6 @@
 ## standard enum
 
-* Option and Result are enums which are in the standrad library and widely used
+* Option and Result are enums which are in the standard library and widely used
 
 ```Rust
 pub enum Option<T> { // rust solution to eliminate null values

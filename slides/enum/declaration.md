@@ -1,20 +1,15 @@
 ## declaration
 
+* Different from enums in jvm languages
 * An enum is a type in itself (pretty similar to struct declaration)
-* one block for fields declaration
-* UpperCamelCase name
+* UpperCamelCase name of variants
 
 ```rust
-enum Workplace { // all valid possibilities SHOULD be listed
-    Paris, // comma separated declaration (just like struct)
-    Nantes,
-	Annecy,
-	Bruxelles,
-}
-
-enum WorkplaceDetailed {
-	Paris(String), // enum's variants can have data
-	Nantes(String),
+enum City {
+    Nantes, // comma separated declaration (just like struct)
+    Annecy,
+    Juarez(String), // each variant can have associated data
+    Paris { district: u8 }, // data can be named explicitely
 }
 ```
 
