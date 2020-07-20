@@ -26,5 +26,4 @@ pub fn div(a: i32, b: i32) -> i32 {
 }
 ```
 
-[📒](https://doc.rust-lang.org/1.17.0/book/documentation.html) | 
-[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=3451c416fbc58ea406d3760465dd537e)
+[📒](https://doc.rust-lang.org/1.17.0/book/documentation.html)
