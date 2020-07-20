@@ -1,7 +1,7 @@
 ## early return
 
-* 'break' exists the loop
-* 'continue' exists the current iteration and jumps to next
+* 'break' exits the loop
+* 'continue' exits the current iteration and jumps to next
 * both are not recommended
 
 ```rust
