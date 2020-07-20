@@ -1,23 +1,13 @@
-## Trait Objects
+## Trait objects
 
-* see [E0038](https://doc.rust-lang.org/error-index.html#E0038)
-* dynamic dispatch requires none of the trait methods to be static (no &self)
+* in order to perform dynamic dispatch, Formula trait need to be a 'Trait Object'
+* in order for a trait to be an 'Trait Object' it has to be 'Object Safe'
+---
+* the trait is 'Object Safe' if
+    * it MUST NOT require that 'Self : Sized'
+    * all of its methods are 'Object Safe'
+* all its methods MUST require that 'Self : Sized' ... or:
+    * MUST NOT have any type parameter
+    * MUST NOT use 'Self'
 
-```rust
-trait Formula {
-//    ------- this trait cannot be made into an object...
-    fn is_installed(&self) -> bool;
-    fn name() -> &'static str;
-//     ---- ...because associated function `name` has no `self` parameter
-}
-fn random_formula() -> Box<dyn Formula> {
-//                     ^^^^^^^^^^^^^^^^ the trait `Formula` cannot be made into an object
-    unimplemented!()
-}
-// help: consider turning `name` into a method by giving it a `&self` argument or constraining it so it does not apply to trait objects
-// 2 possible fixes
-// fn name() -> &'static str where Self: Sized;
-// fn name(&self) -> &'static str;
-```
-
-[📒](https://doc.rust-lang.org/1.17.0/book/traits.html)
+[📒](https://doc.rust-lang.org/1.17.0/book/trait-objects.html#object-safety)
