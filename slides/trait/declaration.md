@@ -1,6 +1,7 @@
 ## trait
 
 * using 'trait' keyword
+* traits cannot have fields
 
 ```rust
 trait Interface {

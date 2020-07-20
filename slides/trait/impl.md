@@ -1,9 +1,10 @@
 ## impl Trait for Struct
+
 ```rust
 struct Peach { weight: f64 }
 trait Composable {
     fn sum(&self, other: Self) -> f64;
-    //                   ^ Self represent the struct implementing this trait
+    //                   ^ Self represents the struct implementing this trait
 }
 //++++++++++++++++++++++++++++++++++
 /**/ impl Composable for Peach { /**/
