@@ -2,6 +2,7 @@
 
 * for implicit deep copies
 * subtrait of [Clone](https://doc.rust-lang.org/core/clone/trait.Clone.html)
+* cannot be explicitly implemented on a type
 * reserved for simple bit-wise copy
 * only few types can implement Copy
 * [String](https://doc.rust-lang.org/std/string/struct.String.html) is not Copy !
