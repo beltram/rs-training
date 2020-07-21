@@ -12,11 +12,11 @@ struct Moto {}
 impl Vehicle for Car {}
 impl Vehicle for Moto {}
 
-fn buy() -> impl Vehicle {
-    Car {}
-}
+fn buy() -> impl Vehicle { Car {} }
 fn main() {
     let purchase = buy();
     println!("{}", purchase.serial());
 }
 ```
+
+[📒](https://doc.rust-lang.org/rust-by-example/trait/impl_trait.html)
