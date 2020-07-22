@@ -4,6 +4,7 @@
 // Line comment
 /* Bloc comment */
 /// Generate library docs for following item (line or function for example)
+/// like functions or struct/enum and their fields
 //! Generate docs for item containing item (useful for crates and modules)
 //! Need to be added at the beginning of lib.rs or mod.rs file 
 ```
