@@ -1,4 +1,4 @@
-## tests - hiding
+## hiding snippet elements
 
 * Start your code line with # to hide it (for clarity or walkthrough) - will still be compiled
 

@@ -1,6 +1,7 @@
 ## function
 
-* There is an extra possibility when documenting a function. You can write specific text for args (not return type though)
+* There is an extra possibility when documenting a function. You can write specific text for args
+* You cannot document return type though
 
 ```rust
 /// Brief.

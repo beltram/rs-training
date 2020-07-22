@@ -1,6 +1,6 @@
 ## cargo
 
-* You can generate the doc of your code using `cargo doc` (it uses rustdoc)
+* You can generate the doc of your code using `cargo doc` (it uses [rustdoc](https://doc.rust-lang.org/rustdoc/what-is-rustdoc.html))
 * Here are a few useful options (more following the link below)
 
 ```rust

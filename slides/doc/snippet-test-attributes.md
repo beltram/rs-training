@@ -1,4 +1,4 @@
-## tests - attributes
+## snippet tests - attributes
 
 * There are some annotation helping rustdoc do the right thing when testing doctests
 
@@ -7,7 +7,7 @@
 /// assert!(false);
 /// ```.
 
-/// ```compile_fail     // Compilation should fail. If it does, test will fail
+/// ```compile_fail     // Compilation should fail. If it does not, test fails
 /// let x = 5;
 /// x += 2; // shouldn't compile!
 /// ```.

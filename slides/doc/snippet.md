@@ -1,4 +1,4 @@
-## tests
+## snippet 
 
 * You can write code in your comments, it will be compiled and run by default
 * The code will act as test using `cargo test`
@@ -10,7 +10,6 @@
 /// ```rust
 /// let x = 5;
 /// ``` ```
-
 
 * rust can be omitted, by default rustdoc uses ` ```rust ` when you use ` ``` `
 

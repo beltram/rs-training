@@ -1,4 +1,4 @@
-## tests
+## testing your snippets
 
 * Like regular unit test, doctests are considered ok if they compile and run without panic
 * To demonstrate it runs as intended, use the macros from assert! family
