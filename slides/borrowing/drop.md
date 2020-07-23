@@ -9,6 +9,9 @@ impl Drop for Agent {
     fn drop(&mut self) { println!("Dropping agent {}", self.name) }
 }
 fn main() {
+    {
+        let bond = Agent { name: String::from("J") };
+    } // > Dropping agent J
     let bond = Agent { name: String::from("Bond") };
     let smith = Agent { name: String::from("Smith") };
 }

@@ -8,6 +8,6 @@ let mut alias = &mut beltram;
 //              ------------ first mutable borrow occurs here
 println!("Hello {}", &mut beltram);
 //                   ^^^^^^^^^^^^ second mutable borrow occurs here
-println!("Hello {}", &mut alias);
-//                   ---------- first borrow later used here
+println!("Hello {}", alias);
+//                   ----- first borrow later used here
 ```
