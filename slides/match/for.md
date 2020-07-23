@@ -8,7 +8,7 @@ fn main() {
     let v = vec!['a', 'b', 'c'];
 
     // The value following the for keyword is a pattern
-    // So you can do evrything possible things with the pattern, like destructuring
+    // So you can do everything possible with a pattern, like destructuring
     for (index, value) in v.iter().enumerate() {
         println!("{} is at index {}", value, index);
     }

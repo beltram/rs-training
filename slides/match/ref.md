@@ -1,4 +1,4 @@
-## match guard
+## ref pattern
 
 * By default, identifier patterns bind a variable to a copy of or move from the matched value 
 * It can be changed to bind a reference using the `ref` keyword (or `ref mut` for a mutable reference)
@@ -13,8 +13,9 @@ fn main() {
                 && p.symptoms.contains(&"fever") => true,
         _ => false
     };
-// This works. But without the ref keyword we' get a value borrowed after move
+// This compiles. Without the ref keyword we'd get a value borrowed after move
 // for "patient". The match expression would have taken ownership of the variable
+// and the code would have fail to compile. See playground example below
   println!("{:?}", patient);
 }
 ```

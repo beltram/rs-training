@@ -1,6 +1,6 @@
 ## if let
 
-* if let can be used as a shorter syntax for match but it can be used in combination with else/else if/else if let
+* if let can be used as shorter syntax for match but it can also be used in combination with else/else if/else if let
 
 ```rust
 let favorite_color: Option<&str> = None;

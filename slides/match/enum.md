@@ -1,6 +1,6 @@
 ### destructuring enums
 
-* Enum can be destructured using the way the data is stored within the enum
+* Enums can also be destructured using the way the data is stored within the enum
 * See a more complex example with nested struc and enums [here](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=71867092024da2b64b1fbc6a8b2101a4)
 
 ```rust
