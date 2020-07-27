@@ -9,6 +9,9 @@ let cast_to_u8 = 42 as u8; // or dynamically cast
 let u64_on_64_proc: usize = 0;
 // overflow fails in debug, not in release (no bound check)
 let a: u8 = 255 + 1;
+// won't compile because inferred type for integer is i32
+let b = 2147483648;
+//             ^ the literal `2147483648` does not fit into the type `i32` whose range is `-2147483648..=2147483647`
 ```
 
 [📒](https://doc.rust-lang.org/1.17.0/book/primitive-types.html#numeric-types)
