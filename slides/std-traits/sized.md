@@ -17,4 +17,5 @@ let unsized_var: [String] = [String::new(), String::new()];
 let sized_var: [String; 2] = [String::new(), String::new()];
 ```
 
-[📒](https://doc.rust-lang.org/1.17.0/book/unsized-types.html)
+[📒](https://doc.rust-lang.org/1.17.0/book/unsized-types.html) | 
+[📒](https://github.com/pretzelhammer/rust-blog/blob/master/posts/sizedness-in-rust.md)
