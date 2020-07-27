@@ -1,9 +1,9 @@
 ## string literal
 
-String literals are inlined within the executable.  
-They are present in a read-only memory section once the program is executed.  
-Of course they are immutable.  
-They can be thought as constants.
+* String literals are inlined within the executable.  
+* They are present in a read-only memory section once the program is executed.  
+* Of course they are immutable.  
+* They can be thought as constants.
 
 ```rust
 let a_string_literal: &str = "Pascal" 

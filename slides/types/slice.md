@@ -1,10 +1,11 @@
 ## slice
 
-slice != array, slice are stack allocated, they are a reference to an array or vec section
+* slice != array, slice are stack allocated, they are a reference to an array or vec section
+* you never create a slice, it's always a reference of an existing variable
 
 ```rust
-let array = ["a", "b", "c", "d"];
-let slice_a_b = &array[0..2];
+let array: [&str; 4] = ["a", "b", "c", "d"];
+let slice_a_b: &[&str] = &array[0..2];
 let vec_slice = &vec![1, 2, 3][0..2];
 // when omitted, lower bound is 0 & upper bound is len
 let whole_array = &array[..];

@@ -2,7 +2,7 @@
 
 ```rust
 let a_string: String = String::from("Pascal");
-assert_eq!(24, std::mem::size_of_val(&a_string));
+assert_eq!(24, std::mem::size_of::<String>());
 ```
 
 ```bash
