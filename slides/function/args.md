@@ -9,9 +9,10 @@ fn one_arg(name: &str) { }
 fn two_arg(name: &str, age: u8) { }
 // passing mutable arg
 struct Person { name: String }
-// here 'mut' is not part on method's signature ; it is a shorthand for turning the arg mutable
-// for the function scope only since the function has ownership over the arg
+// 'mut' isn't part of method's signature
+// it's a shorthand for turning the arg mutable for the function scope only
 fn one_mut_arg(mut person: Person) { person.name = "other".to_string(); }
+// passing mutable reference
 fn one_mut_borrow_arg(person: &mut Person) { person.name = "other".to_string(); }
 ```
 

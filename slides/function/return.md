@@ -9,7 +9,7 @@ fn void_return_type() -> () {
     println!("statement terminated by semicolon ;");
 }
 fn implicit_void_return() { 
-    println!("explicit void will be caught by clippy"); 
+    println!("explicit void will be caught by clippy anyway"); 
 }
 ```
 

@@ -6,7 +6,7 @@ enum Store { Bakery, Supermarket(u32) }
 let store = Store::Supermarket(75012);
 // helps matching enums not implementing PartialEq
 if let Store::Bakery = store { println!("bread !"); }
-// also helps destructuring parameterized enum variants 
+// also helps destructuring enum variants 
 if let Store::Supermarket(departement) = store {
     println!("store is in departement {}", departement)
 }
