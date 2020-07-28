@@ -3,7 +3,7 @@
 ```rust
 fn welcome(who: String) { println!("Welcome {}", who); }
 // same goes for closure
-// let welcome = |who: String| println!("Welcome {}", who);
+let hello = |who: String| println!("Hello {}", who);
 let beltram = String::from("Beltram");
 //  ------- move occurs because `beltram` does not implement the `Copy` trait
 welcome(beltram);

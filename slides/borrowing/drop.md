@@ -10,8 +10,8 @@ impl Drop for Agent {
 }
 fn main() {
     {
-        let bond = Agent { name: String::from("J") };
-    } // > Dropping agent J
+        let mib = Agent { name: String::from("K") };
+    } // > Dropping agent K
     let bond = Agent { name: String::from("Bond") };
     let smith = Agent { name: String::from("Smith") };
 }
