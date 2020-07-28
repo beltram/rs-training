@@ -13,6 +13,7 @@ fn trim_after<'a>(from: &'a str, prefix: &str) -> &'a str {
     // but we could have assign it one lifetime explicitly
     &from[idx..]
 }
+fn reusing_lifetimes<'a>(x: &'a str, y: &'a str, z: &'a str) {}
 fn many_lifetimes<'a, 'b, 'c>() {}
 fn lifetimes_and_generics<'a, 'b, T, V>() {}
 // order matters ! lifetimes then generics
