@@ -1,7 +1,7 @@
 ## ? operator
 
 * Can only be used on an Option or a Result in a function returning an Option or a Result respectively
-* For Result, you can use the ? operator if applied on a function which may return an Err which is convertible with the Err declared in the function signature
+* For Result, you can use the ? operator if applied on a function which return an Error which can be converted in the Error type declared in the function signature
 
 ```rust
 fn main() -> Result<i32,io::Error> { // Work for main fuction since rust 1.26

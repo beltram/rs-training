@@ -1,6 +1,6 @@
 ## or() / and()
 
-* This works exactly like logical combinators or, else and xor (available on nightly)
+* This works exactly like logical operators or, else and xor (available on nightly)
 
 ```rust
 let o1: Result<&str, &str> = Ok("ok1");

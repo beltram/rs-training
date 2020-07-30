@@ -12,11 +12,11 @@ fn is_old(boomer: u8) -> Result<u8, String> { // Error type can be very simple
     else { Ok(boomer) }
 }
 fn main() {
-    let age: u8 = 50;
-    let age_category: Result<u8, String> = is_old(age);
+    let age_category: Result<u8, String> = is_old(50);
     match age_category { // All the Result variant must be handled
         Ok(_) => println!("Not that young anymore"),
-        Err(e) => println!("{}", e),
+        Err(e) => println!("{}", e), // Will print: Still young
     }
+}
 ```
 [📒](https://doc.rust-lang.org/std/option/index.html)

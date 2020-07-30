@@ -1,7 +1,7 @@
 ## or_else()
 
 * if the Option is Some(val) return Some(val). Return the result of the closure if None
-* if the Result is Ok(val) return Ok(vam). Return the result of the closure if Err(e)
+* if the Result is Ok(val) return Ok(val). Return the result of the closure if Err(e)
 * The only difference is that the closure should have 0 argument for Option and 1 for Result
 
 ```rust
