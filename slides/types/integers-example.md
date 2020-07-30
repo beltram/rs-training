@@ -2,7 +2,7 @@
 
 ```rust
 let from_0_to_255: u8 = 0;
-let from_minus_127_to_127: i8 = 0;
+let from_minus_128_to_127: i8 = 0;
 let default_i32 = 0;
 let enforce_u8 = 42u8; // explicitly enforce type in declaration
 let cast_to_u8 = 42 as u8; // or dynamically cast
