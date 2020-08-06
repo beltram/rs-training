@@ -2,8 +2,8 @@
 
 ```rust
 fn welcome(who: String) { println!("Welcome {}", who); }
-// same goes for closure
-let hello = |who: String| println!("Hello {}", who);
+// 'welcome' takes ownership of 'who'
+let hello = |who: String| println!("Hello {}", who); // same goes for closure
 let beltram = String::from("Beltram");
 //  ------- move occurs because `beltram` does not implement the `Copy` trait
 welcome(beltram);
