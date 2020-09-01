@@ -1,9 +1,9 @@
 ## Useful crates
 
 * To define more advanced custom Error types, check out [thiserror](https://docs.rs/thiserror/1.0.20/thiserror/) (good for libraries)
-* For easy and idiomatic error handling, checkout [anyhow](https://docs.rs/anyhow/1.0.32/anyhow/) (good for binaries. Unit tests may be harder)
+* For easy and idiomatic error handling, checkout [anyhow](https://docs.rs/anyhow/1.0.32/anyhow/) 
     * Let you use the ? operator to propagate any error that implements std::error::Error trait
-    * Highly recommended !!
+    * Highly recommended for binaries!! Unit tests may be harder
 
 ```rust
 use anyhow::Result;
