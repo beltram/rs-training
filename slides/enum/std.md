@@ -3,12 +3,12 @@
 * Option and Result are enums which are in the standard library and widely used
 
 ```Rust
-pub enum Option<T> { // rust solution to eliminate null values
+pub enum Option<T> { // for dealing with absence
     None,
     Some(T),
 }
 
-pub enum Result<T, E> { // rust standard error handling
+pub enum Result<T, E> { // for error handling
     Ok(T),
     Err(E),
 }

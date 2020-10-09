@@ -4,7 +4,7 @@
 * different enums can contain same variant names
 
 ```rust
-// Both values are of Workplace type
+// Both values are of City type
 let annecy = City::Annecy; 
 let nantes = City::Nantes;
 

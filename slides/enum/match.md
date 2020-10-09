@@ -8,9 +8,9 @@ fn get_city_insight(city: City) {
     match city {
         City::Nantes => println!("Beltram's home..."),
         City::Paris { district } => println!("Paris' {}th", district),
-        //            ^^^^^^^^ ref to named variant data
+        //            ^^^^^^^^ named variant data between { }
         City::Juarez(country) => println!("Juarez in {}", country),
-        //           ^^^^^^^ anonymous variant data between ()
+        //           ^^^^^^^ anonymous variant data between ( )
         _ => println!("Has to be Annecy then.."),
     }
 }

@@ -1,9 +1,8 @@
 ## enum impl
 
 ```rust
-// any variant with the same function signature 
-// instead of of having 4 different types
 impl City {
+    // declare a method for all variants
     fn get_mayor(&self) -> &'static str {
         match self {
             City::Paris { district } => match district {
