@@ -1,5 +1,7 @@
 ## impl Trait for Struct
 
+* impl MyTrait for MyStruct
+
 ```rust
 struct Peach { weight: f64 }
 trait Composable {

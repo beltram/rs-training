@@ -1,7 +1,7 @@
 ## polymorphism
 
 * only Sized args are allowed
-* hence trait must be boxed
+* hence trait must be boxed (dynamic dispatch)
 
 ```rust
 fn destroy(vehicle: Box<dyn Vehicle>) {}

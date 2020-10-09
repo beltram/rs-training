@@ -7,7 +7,7 @@ trait Vehicle {
 trait Car: Vehicle {
     fn fuel() -> &'static str;
 }
-// trait Car: Vehicle + Default (for multiple inheritance)
+// trait Car: Vehicle + OtherTrait (for multiple inheritance)
 
 struct MercedesBenz {}
 impl Car for MercedesBenz {
