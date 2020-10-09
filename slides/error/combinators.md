@@ -1,6 +1,6 @@
-## Combinators
+## combinators
 
-* We have different combinators which may be applied to Option and Result (we already saw ok_or/or_or_else)
+* we have different combinators which may be applied to Option and Result (we already saw ok_or/or_or_else)
 * or(), and(), or_else() combine two values of type T and return same type T
 * and_then(), apply a function on the Some/Ok value. Otherwise return None/Err. May change the type
 * filter() only for Option, filter type T by using a closure. Return same type T

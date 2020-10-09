@@ -1,4 +1,4 @@
-## match control flow with enum
+## enum pattern matching
 
 * match expression on enums MUST be exhaustive
 * use _ as 'default' (Java) or 'else' (Kotlin)

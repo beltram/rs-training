@@ -1,7 +1,7 @@
 ## Result
 
-* Result should be used as return type for a function where we need to handle errors.
-* Result is annoted with the #[must_use] attribute so if a result value is ignored you'll get a compiler warning
+* should be used as return type for a function where we need to handle errors.
+* is annotated with the #[must_use] attribute : if a result value is ignored you get a compiler warning
 
 ```rust
 // Result can be seen as the following type Result<Value, Error>
