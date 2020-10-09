@@ -1,7 +1,7 @@
 ## Vec of u8 in memory
 
 ```rust
-let vec: Vec<u8> = vec![0, 1, 2];
+let vec: Vec<u8> = vec![9, 8, 7];
 assert_eq!(24, std::mem::size_of_val(&vec));
 ```
 
@@ -15,7 +15,7 @@ assert_eq!(24, std::mem::size_of_val(&vec));
 +--│--+-----+-----+
    │
 +--V--+-----+-----+
-|  0  |  1  |  2  |
+|  9  |  8  |  7  |
 +-----+-----+-----+
 ```
 

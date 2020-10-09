@@ -1,7 +1,7 @@
 ## iter with for
 
 ```rust
-let mut vec = vec![1, 2, 3, 4, 5];
+let mut vec: Vec<i32> = vec![1, 2, 3, 4, 5];
 for i /*:&i32*/  in &vec {
     println!("A reference to {}", i);
 }

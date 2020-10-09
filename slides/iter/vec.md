@@ -1,5 +1,8 @@
 ## Vec<T>
 
+* aka contiguous, growable array
+* != java.util.ArrayList (not contiguous)
+
 ```rust
 let mut vector = Vec::new();
 // boring :/

@@ -1,5 +1,8 @@
 ## for
 
+* source has to implement [IntoIterator](https://doc.rust-lang.org/std/iter/trait.IntoIterator.html) trait 
+e.g. [Vec](https://doc.rust-lang.org/std/vec/struct.Vec.html#impl-IntoIterator), [Range](https://doc.rust-lang.org/std/ops/struct.Range.html) 
+
 ```rust
 for i in 0..10 {
     println!("i -> {}", i);

@@ -11,8 +11,9 @@ let a: Option<&&str> = alphabet.get(&0); // safe access
 let e: &str = alphabet[&4]; // unsafe access
 let a: Option<&str> = alphabet.remove(&0); // delete & retrieve entry
 // from a Vec
-let departements: HashMap<u8, &str> = vec![(23, "Creuse")].into_iter().collect();
-let departements: HashMap<u8, &str> = HashMap::from_iter(vec![(23, "Creuse")].into_iter());
+let vec = vec![(23, "Creuse")];
+let departements: HashMap<u8, &str> = vec.into_iter().collect();
+let departements: HashMap<u8, &str> = HashMap::from_iter(vec.into_iter());
 ```
 
 [📒](https://doc.rust-lang.org/std/collections/struct.HashMap.html) 
