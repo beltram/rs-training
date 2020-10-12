@@ -1,7 +1,8 @@
-## map()
+## .map()
 
-* Maps an ``Option<T>``  to  ``Option<U>`` by applying a function to a contained value, leaving None value untouched
-* Maps a ``Result<T, E>``  to  ``Result<U, E>`` by applying a function to a contained Ok value, leaving  Err value untouched
+* similar to Optional.map() in jvm languages
+* `Option<T> --> Option<U>`
+* `Result<T, E> --> Result<U, E>`
 
 ```rust
 let none: Option<&str> = None;
@@ -15,4 +16,5 @@ assert_eq!(ok.map(fn_character_count), Ok(5));
 assert_eq!(Err("abcde").map(fn_character_count), Err("abcde"));
 ```
 
-
+[📒](https://doc.rust-lang.org/std/option/enum.Option.html#method.map) | 
+[📒](https://doc.rust-lang.org/std/result/enum.Result.html#method.map)

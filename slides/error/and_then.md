@@ -1,8 +1,6 @@
-## and_then()
+## .and_then()
 
 * Similar to flat_map in some other languages
-* For Options: Return None if the option is None. Call a function with the wrapped value and returns the result
-* For Result: Return Err(e) if the Result is Err. Call a function with the wrapped value and returns the result
 
 ```rust
 // Example for Option
@@ -14,3 +12,5 @@ assert_eq!(Some(2).and_then(sq).and_then(nope), None);
 assert_eq!(Some(2).and_then(nope).and_then(sq), None);
 assert_eq!(None.and_then(sq).and_then(sq), None);
 ```
+
+[📒](https://doc.rust-lang.org/std/option/enum.Option.html#method.and_then) 

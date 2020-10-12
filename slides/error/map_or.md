@@ -1,18 +1,19 @@
-## map_or()
+## .map_or()
 
-* Option: Applies a function to the contained value (if any), or returns the provided default (if not)
-* Result: Applies a function to the contained value (if Ok), or returns the provided default (if Err)
-* Arguments passed to map_or are always evaluated. If you pass the result of a function call, you should prefer map_or_else which is lazy
+* map or fallback
+* eager ! Prefer lazy '.map_or_else()'
 
 ```rust
 // Option
-let x = Some("foo");
-assert_eq!(x.map_or(42, |v| v.len()), 3);
-let x: Option<&str> = None;
-assert_eq!(x.map_or(42, |v| v.len()), 42);
+assert_eq!(Some("foo").map_or(42, |it| it.len()), 3);
+assert_eq!(None::<&str>.map_or(42, |v| v.len()), 42);
+
 //Result
 let x: Result<_, &str> = Ok("foo");
 assert_eq!(x.map_or(42, |v| v.len()), 3);
 let x: Result<&str, _> = Err("bar");
 assert_eq!(x.map_or(42, |v| v.len()), 42);
 ```
+
+[📒](https://doc.rust-lang.org/std/option/enum.Option.html#method.map_or) | 
+[📒](https://doc.rust-lang.org/std/result/enum.Result.html#method.map_or)

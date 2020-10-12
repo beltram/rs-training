@@ -7,7 +7,7 @@
 ```rust
 fn read_username_from_file() -> Result<String, io::Error> {
     let f = File::open("username.txt")?;
-    // Can be desugar as:
+    // Can be desugared as:
     let f = File::open("username.txt"); 
     let f = match f {
         Ok(file) => file,

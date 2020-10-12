@@ -1,7 +1,7 @@
 ## ? operator
 
 * can only be used on an Option or a Result
-* in a function returning an Option or a Result respectively
+* enclosing block MUST return Option or Result respectively
 
 ```rust
 fn main() -> Result<i32, io::Error> { // works for main function since Rust 1.26

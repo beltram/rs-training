@@ -1,5 +1,6 @@
-## unwrap
+## .unwrap()
 
+* not recommended !
 * aka unchecked error handling
 * for Option & Result
 * panics when None or Err
@@ -7,11 +8,9 @@
 
 ```rust
 fn main() -> std::io::Result<()> {
-    // thread 'main' panicked at 'called `Result::unwrap()` on an `Err` value: 
-    // Os { code: 13, kind: PermissionDenied, message: "Permission denied" }',
+    // panicked at: Os { kind: PermissionDenied, message: "Permission denied" }',
     let _file = File::create("/foo.txt").unwrap();
-    // thread 'main' panicked at 'Error from file creation: Os { code: 13, 
-    // kind: PermissionDenied, message: "Permission denied" }'
+    // panicked at 'Error from file creation: Os { kind: PermissionDenied, message: "Permission denied" }'
     let _file = File::create("/foo.txt").expect("Error from file creation");
     Ok(())
 }

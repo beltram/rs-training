@@ -1,7 +1,6 @@
-## unwrap
+## .unwrap()
 
 * Result adds 'unwrap_err' and 'expect_err'
-* Option & Result you have advanced operators to define some fallback behavior
 
 ```rust
 let ok: Result<i8, &str> = Ok(8);
