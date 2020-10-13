@@ -1,7 +1,7 @@
 ## function with enum
 
 ```rust
-// use of enum as function arg
+// use an enum as function arg
 fn population(city: City) -> u32 { unimplemented!() }
 
 // call the function with a variant

@@ -1,8 +1,8 @@
 ## declaration
 
-* Different from enums in jvm languages
+* different from enums in jvm languages
 * looks a lot like [Kotlin sealed classes](https://kotlinlang.org/docs/reference/sealed-classes.html)
-* An enum variant is a type in itself (pretty similar to struct declaration)
+* an enum variant accepts attributes
 * UpperCamelCase name of variants
 
 ```rust
@@ -11,7 +11,7 @@ enum City {
     Annecy,
     Juarez(String), // each variant can have associated data
     // (Juarez is the name of the city on Mexico side, El Paso on US side)
-    Paris { district: u8 }, // data can be named explicitely
+    Paris { district: u8 }, // data can be named explicitly
 }
 ```
 

@@ -7,7 +7,7 @@ trait Formula {}
 impl Formula for String {}
 impl Formula for u8 {}
 
-fn formulate(of: Formula) {}
+fn formulate(of: Formula) {} // compilation error
 ```
 
 * here 'of' can either be 'u8' (1 byte) or 'String' (24 bytes)

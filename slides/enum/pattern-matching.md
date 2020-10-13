@@ -11,6 +11,8 @@ fn get_city_insight(city: City) {
         //            ^^^^^^^^ named variant data between { }
         City::Juarez(country) => println!("Juarez in {}", country),
         //           ^^^^^^^ anonymous variant data between ( )
+        // City::Juarez(_) => println!("just Juarez"),
+        //              ^ avoid naming only for anonymous data only
         _ => println!("Has to be Annecy then.."),
     }
 }
