@@ -9,7 +9,7 @@ let annecy: City = City::Annecy;
 let nantes = City::Nantes;
 
 // attribute is attached to enum variant directly
-let kleber = City::Paris(16);
+let kleber = City::Paris(district: 16);
 let el_paso = City::Juarez(String::from("USA"));
 ```
 
