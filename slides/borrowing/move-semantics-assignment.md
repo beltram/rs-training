@@ -1,7 +1,7 @@
 ## Move semantics: assignment
 
 * variable bindings aka assignment takes ownership
-* take ownership is commonly called moving
+* taking ownership is commonly called moving
 * prevents use after free (aka NPE), double-free error
 
 ```rust

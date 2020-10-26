@@ -10,7 +10,7 @@ match x {
 
 match x {
     // match any value and create a binding y for the value
-    y => println!("x: {} y: {}", x, y), 
+    y => println!("x: {}, y: {}", x, y), // prints 'x: 1, y: 1'
     _ => println!("anything"), // this causes an error as it is unreachable
 }
 ```

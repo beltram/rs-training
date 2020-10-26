@@ -1,4 +1,4 @@
-## Lifetime on structs elision
+## lifetime on structs elision
 
 ```rust
 struct Person<'a> { firstname: &'a str }

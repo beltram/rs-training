@@ -1,4 +1,4 @@
-## Lifetime declaration
+## lifetime declaration
 
 * declare with single quote ' followed by a name (prefer single letter starting with 'a')
 * by default lifetime 'l is implicitly declared on borrows

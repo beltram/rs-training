@@ -1,8 +1,8 @@
-## Lifetime
+## lifetime
 
 * Rust wants to prevent use after free
-* We are lending references to other blocks
-* How to make sure other blocks always access valid references ?
+* we are lending references to other blocks
+* how to make sure other blocks always access valid references ?
 
 ```rust
 // use after free example

@@ -1,7 +1,7 @@
-### destructuring complex types
+## destructuring complex types
 
-* destructuring allow to break complex types into their components
-* It allows to use component values separately from each other
+* destructuring allow breaking complex types into their components
+* allows using component values separately from each other
 
 ```rust
 let ((feet, inches), Point { x, y }) = ((3, 10), Point { x: 3, y: -10 });

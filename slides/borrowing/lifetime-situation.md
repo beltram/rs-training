@@ -1,4 +1,4 @@
-## Lifetime situation
+## lifetime situation
 
 * my function returns a reference
 * cannot be a reference to something created inside the function because dropped when function ends

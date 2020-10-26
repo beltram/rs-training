@@ -1,4 +1,4 @@
-## Lifetime on structs
+## lifetime on structs
 
 * named lifetime required on struct declaration
 * named lifetime can/must be declared in impl blocks

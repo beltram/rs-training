@@ -1,6 +1,6 @@
 ## let
 
-* let x = 5 <==> let PATTERN = EXPRESSION
+* 'let x = 5' <==> 'let PATTERN = EXPRESSION'
 * let statements take only [irrefutable](https://doc.rust-lang.org/book/ch18-02-refutability.html) patterns
 
 ```rust

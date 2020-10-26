@@ -1,4 +1,4 @@
-## Lifetime by example
+## lifetime by example
 
 
 ```rust

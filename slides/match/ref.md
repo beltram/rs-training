@@ -1,24 +1,22 @@
 ## ref pattern
 
-* By default, identifier patterns bind a variable to a copy of or move from the matched value 
-* It can be changed to bind a reference using the `ref` keyword (or `ref mut` for a mutable reference)
+* by default, local bindings take ownership
+* it can be changed to borrow using the 'ref' keyword (or 'ref mut')
 
 ```rust
-#[derive(Debug)]
 struct Disease<'a> { symptoms: Vec<&'a str> }
-fn main() {
-    let patient = Disease { symptoms: vec!["headaches", "fever"] };
-    let _has_covid = match patient {
-        ref p if p.symptoms.contains(&"headaches") 
-                && p.symptoms.contains(&"fever") => true,
-        _ => false
-    };
-// This compiles. Without the ref keyword we'd get a value borrowed after move
-// for "patient". The match expression would have taken ownership of the variable
-// and the code would have fail to compile. See playground example below
-  println!("{:?}", patient);
-}
+let patient = Disease { symptoms: vec!["headaches", "fever"] };
+match patient {
+    ref p /*:&Disease*/ if p.symptoms.contains(&"headaches")
+        && p.symptoms.contains(&"fever") => true,
+    _ => false
+};
+// without 'ref', 'p' would have taken ownership of 'patient' 
+println!("{:?}", patient.symptoms); // hence this would have failed
+// because 'Vec' does not 'impl Copy'
 ```
 
+* see [this example](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=de0800a0575a90b07b711681d90e4391)
+without 'ref' which does not compile
+
 [📒](https://doc.rust-lang.org/reference/patterns.html)
-[💻](https://play.rust-lang.org/?version=stable&mode=debug&edition=2018&gist=d9fd5341b352a44704b1ff30bc4e7913)

@@ -1,6 +1,7 @@
 ## range
 
-* Ranges are only allowed with numeric values and char (compiler check that the range is not empty at compile time)
+* Ranges are only allowed with numeric values and char
+* rustc ensures range is not empty at compile time
 
 ```rust
 let x = 5;

@@ -1,21 +1,18 @@
 ## @ binding operator
 
-* Allows to test a value from a variable and bind it directly to an inner variable
+* allows testing a value from a variable and bind it directly to an inner variable
 
 ```rust
-enum Message {
-    Answer { id: i32 },
-}
-
-let msg = Message::Answer { id: 42 };
+enum Message { Answer { id: i32 } }
+let msg = Message::Answer { id: 5 };
 
 match msg {
-    Message::Answer { id: id_variable @ 3..=7, // var tested and code knows it
-    } => println!("Found an answer in range: {}", id_variable),
-    Message::Answer { id: 42 } => { // var tested but code don't know it
-        println!("Greatest answer ever")
-    }
-    // var not tested but code knows it
+    Message::Answer { id: id_var @ 0..10, } => println!("figure: {}", id_var),
+    // 'id_var' is in [0,10[     ^^^^^^^
+    Message::Answer { id: 10..=20 } => println!("from 10 to 20"),
+    // 'id' is in [10,20] but we cannot use it in println
+    Message::Answer { id: 42 } => println!("Greatest answer ever"),
+    // 'id' is 42 but we cannot use it in println
     Message::Answer { id } => println!("Found some other answer: {}", id),
 }
 ```

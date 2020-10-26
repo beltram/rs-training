@@ -4,15 +4,12 @@
 * for loops take only [irrefutable](https://doc.rust-lang.org/book/ch18-02-refutability.html) patterns
 
 ```rust
-fn main() {
-    let v = vec!['a', 'b', 'c'];
+let v = vec!['a', 'b', 'c'];
 
-    // The value following the for keyword is a pattern
-    // So you can do everything possible with a pattern, like destructuring
-    for (index, value) in v.iter().enumerate() {
-        println!("{} is at index {}", value, index);
-    }
-    
+// the value following the 'for' keyword is a pattern
+// you can do everything possible with a pattern, like destructuring
+for (index, value) in v.iter().enumerate() {
+    println!("{} is at index {}", value, index);
 }
 ```
 
