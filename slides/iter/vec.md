@@ -5,7 +5,7 @@
 
 ```rust
 let mut vector = Vec::new();
-// boring :/
+// boring 😕
 vector.push(0u8); // type of vector is inferred here
 // vec! macro as a vararg alternative
 let vec = vec![0, 1, 2];

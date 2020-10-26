@@ -1,4 +1,4 @@
-## Generics
+## generics
 
 * very similar to jvm languages
 
