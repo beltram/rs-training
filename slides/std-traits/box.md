@@ -1,4 +1,4 @@
-## Box
+## [Box](https://doc.rust-lang.org/std/boxed/struct.Box.html)
 
 * for storing data on the heap rather than on the stack
 * use it for

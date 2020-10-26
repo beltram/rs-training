@@ -1,4 +1,4 @@
-## From and Into (aka mappers)
+## [From](https://doc.rust-lang.org/std/convert/trait.From.html) & [Into](https://doc.rust-lang.org/std/convert/trait.Into.html) (aka mappers)
 
 ```rust
 struct Person { firstname: String }
@@ -13,7 +13,7 @@ impl From<Person> for Developer {
 
 let trambel = Developer::from(Person { firstname: "beltram".to_string() });
 let trambel: Developer = Person { firstname: "beltram".to_string() }.into();
-//             ^^^ explicitly declared type to pick the right Into variant
+//           ^^^ explicitly declared type to pick the right Into variant
 ```
 
 * don't implement Into directly, prefer implementing From

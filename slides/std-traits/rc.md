@@ -1,4 +1,4 @@
-## Rc
+## [Rc](https://doc.rust-lang.org/std/rc/struct.Rc.html)
 
 ```rust
 use std::rc::Rc;

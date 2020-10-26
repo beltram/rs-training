@@ -1,4 +1,4 @@
-## Box
+## [Box](https://doc.rust-lang.org/std/boxed/struct.Box.html)
 
 ```rust
 // allocates a [u8;4] on the heap

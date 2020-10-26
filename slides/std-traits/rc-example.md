@@ -1,4 +1,4 @@
-## Rc
+## [Rc](https://doc.rust-lang.org/std/rc/struct.Rc.html)
 
 * stands for 'reference counter'
 * when multiple ownership is required
