@@ -9,7 +9,7 @@ stack.push(1);
 stack.push(2);
 stack.push(3);
 
-// pop() method takes last element of a vector and return Some(value)
+// '.pop()' takes last element of a vector and return Some(value)
 // or None if vector is empty
 while let Some(top) = stack.pop() {
     println!("{}", top);

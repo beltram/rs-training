@@ -1,6 +1,6 @@
 ## [Debug](https://doc.rust-lang.org/std/fmt/trait.Debug.html)
 
-* for debugging context
+* similar to java '.toString()'
 * always use derive macro
 * use with ':?' formatter or ':#?' for pretty printing
 

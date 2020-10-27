@@ -1,6 +1,7 @@
 ## if let
 
-* if let can be used as shorter syntax for match but it can also be used in combination with else/else if/else if let
+* 'if let' can be used as shorter syntax for match
+* but it can also be used in combination with else/else if/else if let
 
 ```rust
 let favorite_color: Option<&str> = None;
@@ -11,13 +12,11 @@ if let Some(color) = favorite_color {
     println!("Using your favorite color, {}, as the background", color);
 } else if is_tuesday {
     println!("Tuesday is green day!");
-} else if let Ok(age) = age {
-    if age > 30 {
+} else if let Ok(a) = age {
+    if a > 30 {
         println!("Using purple as the background color");
     }
-} else {
-    println!("Using blue as the background color");
-}
+} else { println!("Using blue as the background color"); }
 ```
 
 [📒](https://doc.rust-lang.org/book/ch18-01-all-the-places-for-patterns.html#conditional-if-let-expressions)

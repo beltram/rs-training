@@ -14,6 +14,7 @@ fn maybe_with_lifetime<'a, T>() -> &'a Option<T> { &None }
 struct ParentOf<T> { child: T }
 struct ChildOf<F, M> { father: F, mother: M }
 struct NamedParentOf<'a, T> { child: T, firstname: &'a str }
+// lifetimes are always before generics
 ```
 
 [📒](https://doc.rust-lang.org/1.17.0/book/generics.html)

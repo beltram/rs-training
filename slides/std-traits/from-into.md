@@ -16,4 +16,4 @@ let trambel: Developer = Person { firstname: "beltram".to_string() }.into();
 //           ^^^ explicitly declared type to pick the right Into variant
 ```
 
-* don't implement Into directly, prefer implementing From
+* don't implement [Into](https://doc.rust-lang.org/std/convert/trait.Into.html) directly, prefer implementing [From](https://doc.rust-lang.org/std/convert/trait.From.html)

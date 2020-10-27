@@ -1,6 +1,6 @@
 ## [Display](https://doc.rust-lang.org/std/fmt/trait.Display.html)
 
-* similar to [Debug](https://doc.rust-lang.org/std/fmt/trait.Debug.html) but for 'runtime' context
+* similar to [Debug](https://doc.rust-lang.org/std/fmt/trait.Debug.html) but for explicit, custom printing
 * struct implementing [Display](https://doc.rust-lang.org/std/fmt/trait.Display.html) can be used with '{}' formatter
 
 ```rust

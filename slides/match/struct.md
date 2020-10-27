@@ -1,6 +1,6 @@
 ## destructuring structs
 
-* Structs can be destructured using the way the data is stored within the struct
+* structs can be destructured using the way the data is stored within the struct
 
 ```rust
 struct Point {

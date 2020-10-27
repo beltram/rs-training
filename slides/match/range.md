@@ -4,9 +4,9 @@
 * rustc ensures range is not empty at compile time
 
 ```rust
-let x = 5;
+let x = 3;
 match x {
-    1..=5 => println!("one through five"), // equivalent to 1 | 2 | 3 | 4 | 5
+    1..=3 => println!("one through three"), // equivalent to '1 | 2 | 3'
     _ => println!("something else"),
 }
 

@@ -14,4 +14,6 @@ impl Map for Calendar {
 }
 ```
 
+* or declare them <a href="#/10/17">like this</a> on polymorphic return types
+
 [📒](https://doc.rust-lang.org/1.17.0/book/associated-types.html#implementing-associated-types)
