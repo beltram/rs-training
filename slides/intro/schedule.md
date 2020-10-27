@@ -1,7 +1,7 @@
 ## schedule
 
 1. types, string, function
-2. if, borrowing, struct, enum 
+2. if, borrowing, struct
 3. enum, iter, trait
 4. std traits, pattern matching, generics
 5. error, doc, ecosystem
