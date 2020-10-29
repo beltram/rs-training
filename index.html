@@ -1,10 +1,11 @@
 <!doctype html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
-
-    <title>Rust</title>
+    <link type="image/x-icon" rel="shortcut icon" href="favicon.ico" />
+    <title>Rust Training</title>
 
     <link rel="stylesheet" href="css/reveal.css">
     <link rel="stylesheet" href="css/theme/sopra-banking.css">
@@ -22,331 +23,333 @@
 
     </script>
 </head>
+
 <body>
-<div class="reveal">
-    <div class="header">
-        <span class="logo">Sopra Banking Software</span>
-        <span class="title">Rust training</span>
-        <span class="author">Beltram Maldant</span>
+    <div class="reveal">
+        <div class="header">
+            <span class="logo"><img src="lib/images/sbs-logo.svg" alt="Sopra Banking Software"></span>
+            <span class="title">Rust Training</span>
+            <span class="author">Beltram Maldant</span>
+        </div>
+        <div class="slides">
+            <section data-markdown># Rust Training</section>
+            <section>
+                <section data-markdown># intro</section>
+                <section data-markdown="slides/intro/schedule.md"></section>
+                <section data-markdown="slides/intro/manifesto.md"></section>
+                <section data-markdown="slides/intro/rust-in-sbcp.md"></section>
+                <section data-markdown="slides/intro/setup.md"></section>
+                <section data-markdown="slides/intro/new-project.md"></section>
+                <section data-markdown="slides/intro/protagonists.md"></section>
+                <section data-markdown="slides/intro/toolbox.md"></section>
+            </section>
+            <section>
+                <section data-markdown># types</section>
+                <section data-markdown="slides/types/variable.md"></section>
+                <section data-markdown="slides/types/integers.md"></section>
+                <section data-markdown="slides/types/integers-example.md"></section>
+                <section data-markdown="slides/types/integers-incr.md"></section>
+                <section data-markdown="slides/types/integers-euclidean.md"></section>
+                <section data-markdown="slides/types/float.md"></section>
+                <section data-markdown="slides/types/bool.md"></section>
+                <section data-markdown="slides/types/array.md"></section>
+                <section data-markdown="slides/types/slice.md"></section>
+            </section>
+            <section>
+                <section data-markdown># string</section>
+                <section data-markdown="slides/string/string-properties.md"></section>
+                <section data-markdown="slides/string/string-representation.md"></section>
+                <section data-markdown="slides/string/str-representation.md"></section>
+                <section data-markdown="slides/string/str-literal.md"></section>
+                <section data-markdown="slides/string/str-literal-representation.md"></section>
+                <section data-markdown="slides/string/string-variants.md"></section>
+                <section data-markdown="slides/string/working-with-string.md"></section>
+                <section data-markdown="slides/string/str.md"></section>
+                <section data-markdown="slides/string/char.md"></section>
+                <section data-markdown="slides/string/string-iter.md"></section>
+                <section data-markdown="slides/string/string-iter-char.md"></section>
+            </section>
+            <section>
+                <section data-markdown># function</section>
+                <section data-markdown="slides/function/main.md"></section>
+                <section data-markdown="slides/function/declaration.md"></section>
+                <section data-markdown="slides/function/return.md"></section>
+                <section data-markdown="slides/function/return-return.md"></section>
+                <section data-markdown="slides/function/return-tuple.md"></section>
+                <section data-markdown="slides/function/args.md"></section>
+                <section data-markdown="slides/function/using-function.md"></section>
+                <section data-markdown="slides/function/function-method.md"></section>
+                <section data-markdown="slides/function/diverging.md"></section>
+                <section data-markdown="slides/function/function-pointer.md"></section>
+                <section data-markdown="slides/function/closure.md"></section>
+                <section data-markdown="slides/function/closure-scope.md"></section>
+                <section data-markdown="slides/function/closure-move.md"></section>
+            </section>
+            <section>
+                <section data-markdown># if</section>
+                <section data-markdown="slides/if/basic.md"></section>
+                <section data-markdown="slides/if/and-or.md"></section>
+                <section data-markdown="slides/if/expression.md"></section>
+                <section data-markdown="slides/if/if-let.md"></section>
+                <section data-markdown="slides/if/if-let-some.md"></section>
+            </section>
+            <section>
+                <section data-markdown># borrowing</section>
+                <section data-markdown="slides/borrowing/purpose.md"></section>
+                <section data-markdown="slides/borrowing/error-kinds.md"></section>
+                <section data-markdown="slides/borrowing/block.md"></section>
+                <section data-markdown="slides/borrowing/allocation.md"></section>
+                <section data-markdown="slides/borrowing/ownership-rules.md"></section>
+                <section data-markdown="slides/borrowing/move-semantics-assignment.md"></section>
+                <section data-markdown="slides/borrowing/move-semantics-fn-arg.md"></section>
+                <section data-markdown="slides/borrowing/move-semantics-struct.md"></section>
+                <section data-markdown="slides/borrowing/drop.md"></section>
+                <section data-markdown="slides/borrowing/drop-tip.md"></section>
+                <section data-markdown="slides/borrowing/borrowing.md"></section>
+                <section data-markdown="slides/borrowing/borrowing-mut.md"></section>
+                <section data-markdown="slides/borrowing/borrowing-mut-assign.md"></section>
+                <section data-markdown="slides/borrowing/data-race.md"></section>
+                <section data-markdown="slides/borrowing/borrowing-many-mut.md"></section>
+                <section data-markdown="slides/borrowing/lifetime.md"></section>
+                <section data-markdown="slides/borrowing/lifetime-situation.md"></section>
+                <section data-markdown="slides/borrowing/lifetime-error-example.md"></section>
+                <section data-markdown="slides/borrowing/lifetime-declaration.md"></section>
+                <section data-markdown="slides/borrowing/lifetime-on-structs.md"></section>
+                <section data-markdown="slides/borrowing/lifetime-on-structs-elision.md"></section>
+                <section data-markdown="slides/borrowing/lifetime-static.md"></section>
+                <section data-markdown="slides/borrowing/lifetime-advanced.md"></section>
+            </section>
+            <section>
+                <section data-markdown># struct</section>
+                <section data-markdown="slides/struct/declaration.md"></section>
+                <section data-markdown="slides/struct/instantiate.md"></section>
+                <section data-markdown="slides/struct/impl.md"></section>
+                <section data-markdown="slides/struct/default.md"></section>
+                <section data-markdown="slides/struct/tuple-struct.md"></section>
+            </section>
+            <section>
+                <section data-markdown># enum</section>
+                <section data-markdown="slides/enum/declaration.md"></section>
+                <section data-markdown="slides/enum/instantiate.md"></section>
+                <section data-markdown="slides/enum/function.md"></section>
+                <section data-markdown="slides/enum/impl.md"></section>
+                <section data-markdown="slides/enum/std.md"></section>
+                <section data-markdown="slides/enum/pattern-matching.md"></section>
+                <section data-markdown="slides/enum/if_let.md"></section>
+            </section>
+            <section>
+                <section data-markdown># iter</section>
+                <section data-markdown="slides/iter/infinite.md"></section>
+                <section data-markdown="slides/iter/while.md"></section>
+                <section data-markdown="slides/iter/early-return.md"></section>
+                <section data-markdown="slides/iter/for.md"></section>
+                <section data-markdown="slides/iter/for-index.md"></section>
+                <section data-markdown="slides/iter/labels.md"></section>
+                <section data-markdown="slides/iter/vec.md"></section>
+                <section data-markdown="slides/iter/vec-fill.md"></section>
+                <section data-markdown="slides/iter/vec-memory.md"></section>
+                <section data-markdown="slides/iter/vec-u8-memory-img.md"></section>
+                <section data-markdown="slides/iter/vec-string-memory-img.md"></section>
+                <section data-markdown="slides/iter/vec-question.md"></section>
+                <section data-markdown="slides/iter/accessing.md"></section>
+                <section data-markdown="slides/iter/iter-for.md"></section>
+                <section data-markdown="slides/iter/iter.md"></section>
+                <section data-markdown="slides/iter/iter-operator-basic.md"></section>
+                <section data-markdown="slides/iter/iter-collect.md"></section>
+                <section data-markdown="slides/iter/iter-operator-advanced.md"></section>
+                <section data-markdown="slides/iter/hash-map.md"></section>
+                <section data-markdown="slides/iter/hash-map-key.md"></section>
+                <section data-markdown="slides/iter/hash-set.md"></section>
+                <section data-markdown="slides/iter/hash-set-operators.md"></section>
+                <section data-markdown="slides/iter/binary-tree.md"></section>
+                <section data-markdown="slides/iter/linked-list.md"></section>
+                <section data-markdown="slides/iter/collection-complexity.md"></section>
+            </section>
+            <section>
+                <section data-markdown># trait</section>
+                <section data-markdown="slides/trait/declaration.md"></section>
+                <section data-markdown="slides/trait/impl.md"></section>
+                <section data-markdown="slides/trait/default-method.md"></section>
+                <section data-markdown="slides/trait/extension.md"></section>
+                <section data-markdown="slides/trait/inheritance.md"></section>
+                <section data-markdown="slides/trait/dispatch.md"></section>
+                <section data-markdown="slides/trait/static-dispatch.md"></section>
+                <section data-markdown="slides/trait/dynamic-dispatch.md"></section>
+                <section data-markdown="slides/trait/trait-objects.md"></section>
+                <section data-markdown="slides/trait/e0038.md"></section>
+                <section data-markdown="slides/trait/e0038-static-method.md"></section>
+                <section data-markdown="slides/trait/e0038-const.md"></section>
+                <section data-markdown="slides/trait/e0038-generic.md"></section>
+                <section data-markdown="slides/trait/e0038-self.md"></section>
+                <section data-markdown="slides/trait/polymorphism.md"></section>
+                <section data-markdown="slides/trait/polymorphism-arg.md"></section>
+                <section data-markdown="slides/trait/eg-returning-iterator.md"></section>
+            </section>
+            <section>
+                <section data-markdown># std traits</section>
+                <section data-markdown="slides/std-traits/sized.md"></section>
+                <section data-markdown="slides/std-traits/unsized.md"></section>
+                <section data-markdown="slides/std-traits/unsized-recursive.md"></section>
+                <section data-markdown="slides/std-traits/sized-maybe.md"></section>
+                <section data-markdown="slides/std-traits/box.md"></section>
+                <section data-markdown="slides/std-traits/box-impl.md"></section>
+                <section data-markdown="slides/std-traits/rc-example.md"></section>
+                <section data-markdown="slides/std-traits/rc-explained.md"></section>
+                <section data-markdown="slides/std-traits/rc.md"></section>
+                <section data-markdown="slides/std-traits/copy.md"></section>
+                <section data-markdown="slides/std-traits/copy-declaration.md"></section>
+                <section data-markdown="slides/std-traits/copy-copiable.md"></section>
+                <section data-markdown="slides/std-traits/copy-in-action.md"></section>
+                <section data-markdown="slides/std-traits/clone.md"></section>
+                <section data-markdown="slides/std-traits/debug.md"></section>
+                <section data-markdown="slides/std-traits/display.md"></section>
+                <section data-markdown="slides/std-traits/default.md"></section>
+                <section data-markdown="slides/std-traits/default-impl.md"></section>
+                <section data-markdown="slides/std-traits/default-impl-only.md"></section>
+                <section data-markdown="slides/std-traits/default-famous.md"></section>
+                <section data-markdown="slides/std-traits/send-sync.md"></section>
+                <section data-markdown="slides/std-traits/from-into.md"></section>
+                <section data-markdown="slides/std-traits/eq.md"></section>
+                <section data-markdown="slides/std-traits/eq-impl.md"></section>
+                <section data-markdown="slides/std-traits/ord.md"></section>
+            </section>
+            <section>
+                <section data-markdown># pattern matching</section>
+                <section data-markdown="slides/match/intro.md"></section>
+                <section data-markdown="slides/match/basic.md"></section>
+                <section data-markdown="slides/match/pitfall.md"></section>
+                <section data-markdown="slides/match/let.md"></section>
+                <section data-markdown="slides/match/function.md"></section>
+                <section data-markdown="slides/match/for.md"></section>
+                <section data-markdown="slides/match/match.md"></section>
+                <section data-markdown="slides/match/if-let.md"></section>
+                <section data-markdown="slides/match/while-let.md"></section>
+                <section data-markdown="slides/match/multiple-patterns.md"></section>
+                <section data-markdown="slides/match/range.md"></section>
+                <section data-markdown="slides/match/struct.md"></section>
+                <section data-markdown="slides/match/enum.md"></section>
+                <section data-markdown="slides/match/nested.md"></section>
+                <section data-markdown="slides/match/guards.md"></section>
+                <section data-markdown="slides/match/binding-operator.md"></section>
+                <section data-markdown="slides/match/ref.md"></section>
+            </section>
+            <section>
+                <section data-markdown># generics</section>
+                <section data-markdown="slides/generics/declaration.md"></section>
+                <section data-markdown="slides/generics/bounds.md"></section>
+                <section data-markdown="slides/generics/where.md"></section>
+                <section data-markdown="slides/generics/default-generics-problem.md"></section>
+                <section data-markdown="slides/generics/default-generics.md"></section>
+                <section data-markdown="slides/generics/advanced-generics.md"></section>
+                <section data-markdown="slides/generics/associated-type-problem.md"></section>
+                <section data-markdown="slides/generics/associated-type.md"></section>
+                <section data-markdown="slides/generics/associated-type-impl.md"></section>
+                <section data-markdown="slides/generics/associated-type-advanced.md"></section>
+            </section>
+            <section>
+                <section data-markdown># error</section>
+                <section data-markdown="slides/error/panic.md"></section>
+                <section data-markdown="slides/error/assert.md"></section>
+                <section data-markdown="slides/error/basics.md"></section>
+                <section data-markdown="slides/error/option.md"></section>
+                <section data-markdown="slides/error/result.md"></section>
+                <section data-markdown="slides/error/basic-option-operators.md"></section>
+                <section data-markdown="slides/error/basic-result-operators.md"></section>
+                <section data-markdown="slides/error/unwrap.md"></section>
+                <section data-markdown="slides/error/unwrap2.md"></section>
+                <section data-markdown="slides/error/propagation.md"></section>
+                <section data-markdown="slides/error/question-mark.md"></section>
+                <section data-markdown="slides/error/combinators.md"></section>
+                <section data-markdown="slides/error/or-and.md"></section>
+                <section data-markdown="slides/error/or_else.md"></section>
+                <section data-markdown="slides/error/and_then.md"></section>
+                <section data-markdown="slides/error/and_then-result.md"></section>
+                <section data-markdown="slides/error/filter.md"></section>
+                <section data-markdown="slides/error/map.md"></section>
+                <section data-markdown="slides/error/map_err.md"></section>
+                <section data-markdown="slides/error/map_or.md"></section>
+                <section data-markdown="slides/error/map_or_else.md"></section>
+                <section data-markdown="slides/error/as_ref.md"></section>
+                <section data-markdown="slides/error/combination.md"></section>
+                <section data-markdown="slides/error/custom-error.md"></section>
+                <section data-markdown="slides/error/custom-example1.md"></section>
+                <section data-markdown="slides/error/custom-example2.md"></section>
+                <section data-markdown="slides/error/crates.md"></section>
+            </section>
+            <section>
+                <section data-markdown># doc</section>
+                <section data-markdown="slides/doc/comment.md"></section>
+                <section data-markdown="slides/doc/function.md"></section>
+                <section data-markdown="slides/doc/section.md"></section>
+                <section data-markdown="slides/doc/snippet.md"></section>
+                <section data-markdown="slides/doc/tested-snippet.md"></section>
+                <section data-markdown="slides/doc/tested-snippet-preprocessed.md"></section>
+                <section data-markdown="slides/doc/snippet-hiding.md"></section>
+                <section data-markdown="slides/doc/snippet-result.md"></section>
+                <section data-markdown="slides/doc/snippet-test-attributes.md"></section>
+                <section data-markdown="slides/doc/cargo.md"></section>
+            </section>
+            <section>
+                <section data-markdown># DIY</section>
+                <section data-markdown="slides/diy/wasm.md"></section>
+                <section data-markdown="slides/diy/wasi.md"></section>
+                <section data-markdown="slides/diy/async-std.md"></section>
+                <section data-markdown="slides/diy/clap.md"></section>
+                <section data-markdown="slides/diy/structopt.md"></section>
+                <section data-markdown="slides/diy/serde.md"></section>
+                <section data-markdown="slides/diy/nom.md"></section>
+                <section data-markdown="slides/diy/actix.md"></section>
+                <section data-markdown="slides/diy/tide.md"></section>
+                <section data-markdown="slides/diy/rocket.md"></section>
+                <section data-markdown="slides/diy/bench.md"></section>
+                <section data-markdown="slides/diy/orphan-rule.md"></section>
+                <section data-markdown="slides/diy/smart-pointers.md"></section>
+                <section data-markdown="slides/diy/deref-coercion.md"></section>
+                <section data-markdown="slides/diy/phantom-data.md"></section>
+                <section data-markdown="slides/diy/lifetime-elision-rules.md"></section>
+                <section data-markdown="slides/diy/macro.md"></section>
+                <section data-markdown="slides/diy/writing-my-macro.md"></section>
+                <section data-markdown="slides/diy/nll.md"></section>
+                <section data-markdown="slides/diy/conditional-compilation.md"></section>
+                <section data-markdown="slides/diy/unsafe.md"></section>
+                <section data-markdown="slides/diy/ffi.md"></section>
+                <section data-markdown="slides/diy/operator-overloading.md"></section>
+                <section data-markdown="slides/diy/no-std-core-lib.md"></section>
+            </section>
+            <section>
+                <section data-markdown># outro</section>
+                <section data-markdown="slides/outro/outro.md"></section>
+            </section>
+        </div>
+
     </div>
-    <div class="slides">
-        <section data-markdown># Rust training</section>
-        <section>
-            <section data-markdown># intro</section>
-            <section data-markdown="slides/intro/schedule.md"></section>
-            <section data-markdown="slides/intro/manifesto.md"></section>
-            <section data-markdown="slides/intro/rust-in-sbcp.md"></section>
-            <section data-markdown="slides/intro/setup.md"></section>
-            <section data-markdown="slides/intro/new-project.md"></section>
-            <section data-markdown="slides/intro/protagonists.md"></section>
-            <section data-markdown="slides/intro/toolbox.md"></section>
-        </section>
-        <section>
-            <section data-markdown># types</section>
-            <section data-markdown="slides/types/variable.md"></section>
-            <section data-markdown="slides/types/integers.md"></section>
-            <section data-markdown="slides/types/integers-example.md"></section>
-            <section data-markdown="slides/types/integers-incr.md"></section>
-            <section data-markdown="slides/types/integers-euclidean.md"></section>
-            <section data-markdown="slides/types/float.md"></section>
-            <section data-markdown="slides/types/bool.md"></section>
-            <section data-markdown="slides/types/array.md"></section>
-            <section data-markdown="slides/types/slice.md"></section>
-        </section>
-        <section>
-            <section data-markdown># string</section>
-            <section data-markdown="slides/string/string-properties.md"></section>
-            <section data-markdown="slides/string/string-representation.md"></section>
-            <section data-markdown="slides/string/str-representation.md"></section>
-            <section data-markdown="slides/string/str-literal.md"></section>
-            <section data-markdown="slides/string/str-literal-representation.md"></section>
-            <section data-markdown="slides/string/string-variants.md"></section>
-            <section data-markdown="slides/string/working-with-string.md"></section>
-            <section data-markdown="slides/string/str.md"></section>
-            <section data-markdown="slides/string/char.md"></section>
-            <section data-markdown="slides/string/string-iter.md"></section>
-            <section data-markdown="slides/string/string-iter-char.md"></section>
-        </section>
-        <section>
-            <section data-markdown># function</section>
-            <section data-markdown="slides/function/main.md"></section>
-            <section data-markdown="slides/function/declaration.md"></section>
-            <section data-markdown="slides/function/return.md"></section>
-            <section data-markdown="slides/function/return-return.md"></section>
-            <section data-markdown="slides/function/return-tuple.md"></section>
-            <section data-markdown="slides/function/args.md"></section>
-            <section data-markdown="slides/function/using-function.md"></section>
-            <section data-markdown="slides/function/function-method.md"></section>
-            <section data-markdown="slides/function/diverging.md"></section>
-            <section data-markdown="slides/function/function-pointer.md"></section>
-            <section data-markdown="slides/function/closure.md"></section>
-            <section data-markdown="slides/function/closure-scope.md"></section>
-            <section data-markdown="slides/function/closure-move.md"></section>
-        </section>
-        <section>
-            <section data-markdown># if</section>
-            <section data-markdown="slides/if/basic.md"></section>
-            <section data-markdown="slides/if/and-or.md"></section>
-            <section data-markdown="slides/if/expression.md"></section>
-            <section data-markdown="slides/if/if-let.md"></section>
-            <section data-markdown="slides/if/if-let-some.md"></section>
-        </section>
-        <section>
-            <section data-markdown># borrowing</section>
-            <section data-markdown="slides/borrowing/purpose.md"></section>
-            <section data-markdown="slides/borrowing/error-kinds.md"></section>
-            <section data-markdown="slides/borrowing/block.md"></section>
-            <section data-markdown="slides/borrowing/allocation.md"></section>
-            <section data-markdown="slides/borrowing/ownership-rules.md"></section>
-            <section data-markdown="slides/borrowing/move-semantics-assignment.md"></section>
-            <section data-markdown="slides/borrowing/move-semantics-fn-arg.md"></section>
-            <section data-markdown="slides/borrowing/move-semantics-struct.md"></section>
-            <section data-markdown="slides/borrowing/drop.md"></section>
-            <section data-markdown="slides/borrowing/drop-tip.md"></section>
-            <section data-markdown="slides/borrowing/borrowing.md"></section>
-            <section data-markdown="slides/borrowing/borrowing-mut.md"></section>
-            <section data-markdown="slides/borrowing/borrowing-mut-assign.md"></section>
-            <section data-markdown="slides/borrowing/data-race.md"></section>
-            <section data-markdown="slides/borrowing/borrowing-many-mut.md"></section>
-            <section data-markdown="slides/borrowing/lifetime.md"></section>
-            <section data-markdown="slides/borrowing/lifetime-situation.md"></section>
-            <section data-markdown="slides/borrowing/lifetime-error-example.md"></section>
-            <section data-markdown="slides/borrowing/lifetime-declaration.md"></section>
-            <section data-markdown="slides/borrowing/lifetime-on-structs.md"></section>
-            <section data-markdown="slides/borrowing/lifetime-on-structs-elision.md"></section>
-            <section data-markdown="slides/borrowing/lifetime-static.md"></section>
-            <section data-markdown="slides/borrowing/lifetime-advanced.md"></section>
-        </section>
-        <section>
-            <section data-markdown># struct</section>
-            <section data-markdown="slides/struct/declaration.md"></section>
-            <section data-markdown="slides/struct/instantiate.md"></section>
-            <section data-markdown="slides/struct/impl.md"></section>
-            <section data-markdown="slides/struct/default.md"></section>
-            <section data-markdown="slides/struct/tuple-struct.md"></section>
-        </section>
-        <section>
-            <section data-markdown># enum</section>
-            <section data-markdown="slides/enum/declaration.md"></section>
-            <section data-markdown="slides/enum/instantiate.md"></section>
-            <section data-markdown="slides/enum/function.md"></section>
-            <section data-markdown="slides/enum/impl.md"></section>
-            <section data-markdown="slides/enum/std.md"></section>
-            <section data-markdown="slides/enum/pattern-matching.md"></section>
-            <section data-markdown="slides/enum/if_let.md"></section>
-        </section>
-        <section>
-            <section data-markdown># iter</section>
-            <section data-markdown="slides/iter/infinite.md"></section>
-            <section data-markdown="slides/iter/while.md"></section>
-            <section data-markdown="slides/iter/early-return.md"></section>
-            <section data-markdown="slides/iter/for.md"></section>
-            <section data-markdown="slides/iter/for-index.md"></section>
-            <section data-markdown="slides/iter/labels.md"></section>
-            <section data-markdown="slides/iter/vec.md"></section>
-            <section data-markdown="slides/iter/vec-fill.md"></section>
-            <section data-markdown="slides/iter/vec-memory.md"></section>
-            <section data-markdown="slides/iter/vec-u8-memory-img.md"></section>
-            <section data-markdown="slides/iter/vec-string-memory-img.md"></section>
-            <section data-markdown="slides/iter/vec-question.md"></section>
-            <section data-markdown="slides/iter/accessing.md"></section>
-            <section data-markdown="slides/iter/iter-for.md"></section>
-            <section data-markdown="slides/iter/iter.md"></section>
-            <section data-markdown="slides/iter/iter-operator-basic.md"></section>
-            <section data-markdown="slides/iter/iter-collect.md"></section>
-            <section data-markdown="slides/iter/iter-operator-advanced.md"></section>
-            <section data-markdown="slides/iter/hash-map.md"></section>
-            <section data-markdown="slides/iter/hash-map-key.md"></section>
-            <section data-markdown="slides/iter/hash-set.md"></section>
-            <section data-markdown="slides/iter/hash-set-operators.md"></section>
-            <section data-markdown="slides/iter/binary-tree.md"></section>
-            <section data-markdown="slides/iter/linked-list.md"></section>
-            <section data-markdown="slides/iter/collection-complexity.md"></section>
-        </section>
-        <section>
-            <section data-markdown># trait</section>
-            <section data-markdown="slides/trait/declaration.md"></section>
-            <section data-markdown="slides/trait/impl.md"></section>
-            <section data-markdown="slides/trait/default-method.md"></section>
-            <section data-markdown="slides/trait/extension.md"></section>
-            <section data-markdown="slides/trait/inheritance.md"></section>
-            <section data-markdown="slides/trait/dispatch.md"></section>
-            <section data-markdown="slides/trait/static-dispatch.md"></section>
-            <section data-markdown="slides/trait/dynamic-dispatch.md"></section>
-            <section data-markdown="slides/trait/trait-objects.md"></section>
-            <section data-markdown="slides/trait/e0038.md"></section>
-            <section data-markdown="slides/trait/e0038-static-method.md"></section>
-            <section data-markdown="slides/trait/e0038-const.md"></section>
-            <section data-markdown="slides/trait/e0038-generic.md"></section>
-            <section data-markdown="slides/trait/e0038-self.md"></section>
-            <section data-markdown="slides/trait/polymorphism.md"></section>
-            <section data-markdown="slides/trait/polymorphism-arg.md"></section>
-            <section data-markdown="slides/trait/eg-returning-iterator.md"></section>
-        </section>
-        <section>
-            <section data-markdown># std traits</section>
-            <section data-markdown="slides/std-traits/sized.md"></section>
-            <section data-markdown="slides/std-traits/unsized.md"></section>
-            <section data-markdown="slides/std-traits/unsized-recursive.md"></section>
-            <section data-markdown="slides/std-traits/sized-maybe.md"></section>
-            <section data-markdown="slides/std-traits/box.md"></section>
-            <section data-markdown="slides/std-traits/box-impl.md"></section>
-            <section data-markdown="slides/std-traits/rc-example.md"></section>
-            <section data-markdown="slides/std-traits/rc-explained.md"></section>
-            <section data-markdown="slides/std-traits/rc.md"></section>
-            <section data-markdown="slides/std-traits/copy.md"></section>
-            <section data-markdown="slides/std-traits/copy-declaration.md"></section>
-            <section data-markdown="slides/std-traits/copy-copiable.md"></section>
-            <section data-markdown="slides/std-traits/copy-in-action.md"></section>
-            <section data-markdown="slides/std-traits/clone.md"></section>
-            <section data-markdown="slides/std-traits/debug.md"></section>
-            <section data-markdown="slides/std-traits/display.md"></section>
-            <section data-markdown="slides/std-traits/default.md"></section>
-            <section data-markdown="slides/std-traits/default-impl.md"></section>
-            <section data-markdown="slides/std-traits/default-impl-only.md"></section>
-            <section data-markdown="slides/std-traits/default-famous.md"></section>
-            <section data-markdown="slides/std-traits/send-sync.md"></section>
-            <section data-markdown="slides/std-traits/from-into.md"></section>
-            <section data-markdown="slides/std-traits/eq.md"></section>
-            <section data-markdown="slides/std-traits/eq-impl.md"></section>
-            <section data-markdown="slides/std-traits/ord.md"></section>
-        </section>
-        <section>
-            <section data-markdown># pattern matching</section>
-            <section data-markdown="slides/match/intro.md"></section>
-            <section data-markdown="slides/match/basic.md"></section>
-            <section data-markdown="slides/match/pitfall.md"></section>
-            <section data-markdown="slides/match/let.md"></section>
-            <section data-markdown="slides/match/function.md"></section>
-            <section data-markdown="slides/match/for.md"></section>
-            <section data-markdown="slides/match/match.md"></section>
-            <section data-markdown="slides/match/if-let.md"></section>
-            <section data-markdown="slides/match/while-let.md"></section>
-            <section data-markdown="slides/match/multiple-patterns.md"></section>
-            <section data-markdown="slides/match/range.md"></section>
-            <section data-markdown="slides/match/struct.md"></section>
-            <section data-markdown="slides/match/enum.md"></section>
-            <section data-markdown="slides/match/nested.md"></section>
-            <section data-markdown="slides/match/guards.md"></section>
-            <section data-markdown="slides/match/binding-operator.md"></section>
-            <section data-markdown="slides/match/ref.md"></section>
-        </section>
-        <section>
-            <section data-markdown># generics</section>
-            <section data-markdown="slides/generics/declaration.md"></section>
-            <section data-markdown="slides/generics/bounds.md"></section>
-            <section data-markdown="slides/generics/where.md"></section>
-            <section data-markdown="slides/generics/default-generics-problem.md"></section>
-            <section data-markdown="slides/generics/default-generics.md"></section>
-            <section data-markdown="slides/generics/advanced-generics.md"></section>
-            <section data-markdown="slides/generics/associated-type-problem.md"></section>
-            <section data-markdown="slides/generics/associated-type.md"></section>
-            <section data-markdown="slides/generics/associated-type-impl.md"></section>
-            <section data-markdown="slides/generics/associated-type-advanced.md"></section>
-        </section>
-        <section>
-            <section data-markdown># error</section>
-            <section data-markdown="slides/error/panic.md"></section>
-            <section data-markdown="slides/error/assert.md"></section>
-            <section data-markdown="slides/error/basics.md"></section>
-            <section data-markdown="slides/error/option.md"></section>
-            <section data-markdown="slides/error/result.md"></section>
-            <section data-markdown="slides/error/basic-option-operators.md"></section>
-            <section data-markdown="slides/error/basic-result-operators.md"></section>
-            <section data-markdown="slides/error/unwrap.md"></section>
-            <section data-markdown="slides/error/unwrap2.md"></section>
-            <section data-markdown="slides/error/propagation.md"></section>
-            <section data-markdown="slides/error/question-mark.md"></section>
-            <section data-markdown="slides/error/combinators.md"></section>
-            <section data-markdown="slides/error/or-and.md"></section>
-            <section data-markdown="slides/error/or_else.md"></section>
-            <section data-markdown="slides/error/and_then.md"></section>
-            <section data-markdown="slides/error/and_then-result.md"></section>
-            <section data-markdown="slides/error/filter.md"></section>
-            <section data-markdown="slides/error/map.md"></section>
-            <section data-markdown="slides/error/map_err.md"></section>
-            <section data-markdown="slides/error/map_or.md"></section>
-            <section data-markdown="slides/error/map_or_else.md"></section>
-            <section data-markdown="slides/error/as_ref.md"></section>
-            <section data-markdown="slides/error/combination.md"></section>
-            <section data-markdown="slides/error/custom-error.md"></section>
-            <section data-markdown="slides/error/custom-example1.md"></section>
-            <section data-markdown="slides/error/custom-example2.md"></section>
-            <section data-markdown="slides/error/crates.md"></section>
-        </section>
-        <section>
-            <section data-markdown># doc</section>
-            <section data-markdown="slides/doc/comment.md"></section>
-            <section data-markdown="slides/doc/function.md"></section>
-            <section data-markdown="slides/doc/section.md"></section>
-            <section data-markdown="slides/doc/snippet.md"></section>
-            <section data-markdown="slides/doc/tested-snippet.md"></section>
-            <section data-markdown="slides/doc/tested-snippet-preprocessed.md"></section>
-            <section data-markdown="slides/doc/snippet-hiding.md"></section>
-            <section data-markdown="slides/doc/snippet-result.md"></section>
-            <section data-markdown="slides/doc/snippet-test-attributes.md"></section>
-            <section data-markdown="slides/doc/cargo.md"></section>
-        </section>
-        <section>
-            <section data-markdown># DIY</section>
-            <section data-markdown="slides/diy/wasm.md"></section>
-            <section data-markdown="slides/diy/wasi.md"></section>
-            <section data-markdown="slides/diy/async-std.md"></section>
-            <section data-markdown="slides/diy/clap.md"></section>
-            <section data-markdown="slides/diy/structopt.md"></section>
-            <section data-markdown="slides/diy/serde.md"></section>
-            <section data-markdown="slides/diy/nom.md"></section>
-            <section data-markdown="slides/diy/actix.md"></section>
-            <section data-markdown="slides/diy/tide.md"></section>
-            <section data-markdown="slides/diy/rocket.md"></section>
-            <section data-markdown="slides/diy/bench.md"></section>
-            <section data-markdown="slides/diy/orphan-rule.md"></section>
-            <section data-markdown="slides/diy/smart-pointers.md"></section>
-            <section data-markdown="slides/diy/deref-coercion.md"></section>
-            <section data-markdown="slides/diy/phantom-data.md"></section>
-            <section data-markdown="slides/diy/lifetime-elision-rules.md"></section>
-            <section data-markdown="slides/diy/macro.md"></section>
-            <section data-markdown="slides/diy/writing-my-macro.md"></section>
-            <section data-markdown="slides/diy/nll.md"></section>
-            <section data-markdown="slides/diy/conditional-compilation.md"></section>
-            <section data-markdown="slides/diy/unsafe.md"></section>
-            <section data-markdown="slides/diy/ffi.md"></section>
-            <section data-markdown="slides/diy/operator-overloading.md"></section>
-            <section data-markdown="slides/diy/no-std-core-lib.md"></section>
-        </section>
-        <section>
-            <section data-markdown># outro</section>
-            <section data-markdown="slides/outro/outro.md"></section>
-        </section>
-    </div>
-
-</div>
 
 
-<script src="lib/js/head.min.js"></script>
-<script src="js/reveal.js"></script>
-<script src="js/external-html.js"></script>
-<script>
-    Reveal.initialize({
-        width: 1200,
-        history: true,
-        dependencies: [
-            {src: 'plugin/twitter/embed-tweet.js'},
-            {src: 'plugin/markdown/marked.js'},
-            {src: 'plugin/markdown/markdown.js'},
-            {src: 'plugin/notes/notes.js', async: true},
-            {
-                src: 'plugin/highlight/highlight.js', async: true, callback: function () {
-                    hljs.initHighlightingOnLoad();
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script src="js/external-html.js"></script>
+    <script>
+        Reveal.initialize({
+            width: 1200,
+            history: true,
+            dependencies: [
+                { src: 'plugin/twitter/embed-tweet.js' },
+                { src: 'plugin/markdown/marked.js' },
+                { src: 'plugin/markdown/markdown.js' },
+                { src: 'plugin/notes/notes.js', async: true },
+                {
+                    src: 'plugin/highlight/highlight.js', async: true, callback: function () {
+                        hljs.initHighlightingOnLoad();
+                    }
                 }
-            }
-        ]
-    });
+            ]
+        });
 
-    Reveal.configure({
-        slideNumber: true
-    });
+        Reveal.configure({
+            slideNumber: true
+        });
 
-</script>
+    </script>
 </body>
+
 </html>
