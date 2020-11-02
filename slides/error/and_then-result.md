@@ -1,8 +1,7 @@
 ## .and_then()
 
-
 ```rust
-// Example for Result
+// example for Result
 fn sq(x: u32) -> Result<u32, u32> { Ok(x * x) }
 fn err(x: u32) -> Result<u32, u32> { Err(x) }
 

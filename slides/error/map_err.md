@@ -1,6 +1,6 @@
 ## .map_err()
 
-* Only for Result
+* only for Result
 * `Result<T, E> --> Result<T, F>`
 
 ```rust

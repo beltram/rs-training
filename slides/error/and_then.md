@@ -1,9 +1,9 @@
 ## .and_then()
 
-* Similar to flat_map in some other languages
+* similar to flat_map in other languages
 
 ```rust
-// Example for Option
+// example for Option
 fn sq(x: u32) -> Option<u32> { Some(x * x) }
 fn nope(_: u32) -> Option<u32> { None }
 

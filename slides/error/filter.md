@@ -1,6 +1,6 @@
 ## .filter()
 
-* Available only for option
+* only for Option
 
 ```rust
 let is_even = |n: &i32| n % 2 == 0;

@@ -1,6 +1,10 @@
-## as_ref() / as_mut()
+## .as_ref() / .as_mut()
 
-* as_ref() : Convert `Option<T>` to `Option<&T>` and `Result<T, E>` to `Result<&T, &E>`
-    * May aussi take a `&Option<T>` or `&Result<T, E>` (same return type)
-* as_mut() : Converts `Option<T>` to `Option<&mut T>` and `Result<T, E>` to `Result<&mut T, &mut E>`
-    * May aussi take a `&mut Option<T>` or `&mut Result<T, E>` (same return type)
+* '.as_ref()'
+  * `Option<T> --> Option<T>`
+  * `Result<T, E> --> Result<&T, &E>`
+  * also works for borrowed variants e.g. `&Option<T>`
+* '.as_mut()'
+  * `Option<T> --> Option<&mut T>`
+  * `Result<T, E> --> Result<&mut T, &mut E>`
+  * also works for borrowed variants e.g. `&mut Option<T>`
