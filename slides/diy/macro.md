@@ -1,1 +1,1 @@
-## macro
+## macro & how to write a simple one ?
