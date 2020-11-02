@@ -1,7 +1,7 @@
 ## testing your snippets
 
-* Like regular unit test, doctests are considered ok if they compile and run without panic
-* To demonstrate it runs as intended, use the macros from assert! family
+* like regular unit test, doctests are considered ok if they compile and run without panic
+* use macros from 'assert!' family to demonstrate it runs as intended
 
 ```rust
 /// # Example
@@ -11,7 +11,7 @@
 /// let b = 5;
 /// assert_eq!(a, 4);
 /// assert_eq!(plus(a,b), 9);
-/// ``` //end snippet   
+/// ``` //(escape reveal.js)   
 pub fn plus(a: u32, b: u32) -> u32 { a + b }
 ```
 

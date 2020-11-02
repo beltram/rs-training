@@ -1,7 +1,7 @@
 ## sections
 
-* We can use specific markdown heading to create sections
-* Sections are used to discuss particular scenarios or edge case
+* you can use specific markdown heading to create sections
+* sections are used to discuss particular scenarios or edge case
 
 ```rust
 /// # Example // often used to write code
@@ -10,5 +10,5 @@
 /// # Safety // used to discuss about unsafe code and why there is some
 ```
 
-* See an display example [here](https://doc.rust-lang.org/book/ch14-02-publishing-to-crates-io.html#making-useful-documentation-comments) for the example section
+* see a display example [here](https://doc.rust-lang.org/book/ch14-02-publishing-to-crates-io.html#making-useful-documentation-comments) for the example section
 

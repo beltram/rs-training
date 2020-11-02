@@ -1,8 +1,8 @@
 ## snippet tests handling Result
 
-* It is possible to use the ? operator in doctests for when it's not useful to show complete error handling
-* You'll have to declare a main function returning a Result to do so
-* You may or may not hide this part
+* it is possible to use the ? operator in doctests for when it's not useful to show complete error handling
+* you'll have to declare a main function returning a Result to do so
+* you may or may not hide this part
 
 ```rust
 /// ```rust

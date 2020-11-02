@@ -1,6 +1,6 @@
 ## hiding snippet elements
 
-* Start your code line with # to hide it (for clarity or walkthrough) - will still be compiled
+* start your code line with # to hide it (for clarity or walkthrough) - will still be compiled
 
 ```rust
 /// First, we set `x` to five and `y` to six:
@@ -14,9 +14,7 @@
 /// # let y = 6; // will be hidden too
 /// println!("{}", x + y);
 /// ```.
+/// ```. is for escaping reveal.js ;) 
 ```
-
-* Notice that the ```. are only there for formatting purposes
-* Should have been written ```
 
 [📒](https://doc.rust-lang.org/rustdoc/documentation-tests.html#hiding-portions-of-the-example)

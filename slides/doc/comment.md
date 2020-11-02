@@ -9,6 +9,7 @@
 //! Need to be added at the beginning of lib.rs or mod.rs file 
 ```
 
-* /// and //! are used to generate HTML documentation. They support markdown and more.
+* /// and //! are used to generate HTML documentation 
+* they support markdown and more
 
 [📒](https://doc.rust-lang.org/1.17.0/book/comments.html)

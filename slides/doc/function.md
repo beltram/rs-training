@@ -1,7 +1,7 @@
 ## function
 
-* There is an extra possibility when documenting a function. You can write specific text for args
-* You cannot document return type though
+* there is an extra possibility when documenting a function. You can write specific text for args
+* you cannot document return type though
 
 ```rust
 /// Brief.
@@ -10,5 +10,5 @@
 /// 
 /// * `foo` - Text about foo.
 /// * `bar` - Text about bar.
-fn function (foo: i32, bar: &str) {}
+fn a_function(foo: i32, bar: &str) {}
 ```
