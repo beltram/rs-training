@@ -1,1 +1,1 @@
-## Lifetime elision rules
+## lifetime elision rules
