@@ -7,8 +7,3 @@
 * target_vendor
 * test (rustc --test), debug_assertions(enabled if no optimize)
 * proc_macro (if you build macro)
-
-## But can define your own (arbitrary set).
-
-* To make free/trial/pro binaries.
-* Or any specialization of your binaries.
