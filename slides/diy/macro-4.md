@@ -4,12 +4,13 @@
     * apply treatment on parameters 
     * allows variable parameter number
     
-  ```rust
-    let sql = sql!(SELECT * FROM posts WHERE id=1);
-  ```
-  ```rust
-    #[proc_macro]
-    pub fn sql(input: TokenStream) -> TokenStream {
-      // implementation    
-    }
-  ```
+```rust
+let sql = sql!(SELECT * FROM posts WHERE id=1);
+```
+
+```rust
+#[proc_macro]
+pub fn sql(input: TokenStream) -> TokenStream {
+  // implementation    
+}
+```
